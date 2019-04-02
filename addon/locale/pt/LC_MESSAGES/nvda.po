@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WordCount\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2019-04-02 16:09+0200\n"
-"PO-Revision-Date: 2019-04-02 17:34+0100\n"
+"PO-Revision-Date: 2019-04-02 16:12+0200\n"
 "Last-Translator: José Manuel Delicado <jmdaweb@hotmail.com>\n"
 "Language-Team: Equipa portuguesa do NVDA: Ângelo Abrantes <ampa4374@gmail."
 "com> e Rui Fontes <rui.fontes@tiflotecnia.com>\n"
@@ -37,8 +37,10 @@ msgstr "Contar palavras"
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 #: buildVars.py:17
+#, fuzzy
+#| msgid "Word count"
 msgid "Addon Word count"
-msgstr "Extra Contar palavras"
+msgstr "Contar palavras"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
@@ -47,8 +49,6 @@ msgid ""
 "Count the words of the selected text when you select some text and press "
 "NVDA control w."
 msgstr ""
-"Conta as palavras do texto seleccionado quando selecciona texto e "
-"pressiona NVDA+Control+W."
 
 #~ msgid "Source text"
 #~ msgstr "Texto fonte"

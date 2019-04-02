@@ -21,15 +21,15 @@ addon_info = {
 	# version
 	"addon_version" : "1.1",
 	# Author(s)
-	"addon_author" : u"Oriol Gómez <ogomez.s92@gmail.com> and Rui Fontes <rui.fontes@tiflotecnia.com>",
+	"addon_author" : "Oriol Gomez <ogomez.s92@gmail.com> and Rui Fontes <rui.fontes@tiflotecnia.com>",
 	# URL for the add-on documentation support
-	"addon_url" : https://github.com/ruifontes/wordCount,
+	"addon_url" : "https://github.com/ruifontes/wordCount",
 	# Documentation file name
 	"addon_docFileName" : "readme.html",
 	# Minimum NVDA version supported (e.g. "2018.3.0")
-	"addon_minimumNVDAVersion" : 2017.2.0,
+	"addon_minimumNVDAVersion" : "2017.2.0",
 	# Last NVDA version supported/tested (e.g. "2018.4.0", ideally more recent than minimum version)
-	"addon_lastTestedNVDAVersion" : 2019.1.0,
+	"addon_lastTestedNVDAVersion" : "2019.1.0",
 	# Add-on update channel (default is stable or None)
 	"addon_updateChannel" : None,
 }

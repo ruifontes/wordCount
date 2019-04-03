@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WordCount\n"
-"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
-"POT-Creation-Date: 2019-04-02 16:09+0200\n"
-"PO-Revision-Date: 2019-04-03 01:33+0100\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
+"POT-Creation-Date: 2019-04-03 23:21+0100\n"
+"PO-Revision-Date: 2019-04-03 23:23+0100\n"
 "Last-Translator: José Manuel Delicado <jmdaweb@hotmail.com>\n"
 "Language-Team: Equipa portuguesa do NVDA: Ângelo Abrantes <ampa4374@gmail."
 "com> e Rui Fontes <rui.fontes@tiflotecnia.com>\n"
@@ -17,28 +17,32 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: addon\globalPlugins\word-count.py:27
+#. For translators: Message to announce when no text is selected
+#: addon\globalPlugins\word-count.py:28
 msgid "select some text first."
-msgstr ""
+msgstr "Seleccione algum texto antes."
 
-#: addon\globalPlugins\word-count.py:33
-#, python-format
-msgid "%s words"
-msgstr ""
-
+#. For translators: Message to announce the number of words
 #: addon\globalPlugins\word-count.py:35
-msgid "Announces how many words are in the selected text."
-msgstr ""
+#, python-brace-format
+msgid "{arg0} words"
+msgstr "{arg0} palavras"
 
-#: addon\globalPlugins\word-count.py:36
+#. For translators: Message to be announced during Keyboard Help
+#: addon\globalPlugins\word-count.py:38
+msgid "Announces how many words are in the selected text."
+msgstr "Anuncia quantas palavras há no texto seleccionado"
+
+#. For translators: Name of the section in "Input gestures" dialog.
+#: addon\globalPlugins\word-count.py:40
 msgid "Word count"
-msgstr ""
+msgstr "Contar Palavras"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 #: buildVars.py:17
 msgid "Addon Word count"
-msgstr ""
+msgstr "Extra para contar palavras"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
@@ -47,6 +51,8 @@ msgid ""
 "Count the words of the selected text when you select some text and press "
 "NVDA control w."
 msgstr ""
+"Conta as palavras do texto seleccionado, após selecionar algum texto e "
+"pressionar NVDA control w."
 
 #~ msgid "Source text"
 #~ msgstr "Texto fonte"

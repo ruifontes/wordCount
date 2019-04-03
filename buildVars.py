@@ -19,9 +19,9 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description" : _("""Count the words of the selected text when you select some text and press NVDA control w."""),
 	# version
-	"addon_version" : "1.1",
+	"addon_version" : "1.2",
 	# Author(s)
-	"addon_author" : "Oriol Gomez <ogomez.s92@gmail.com> and Rui Fontes <rui.fontes@tiflotecnia.com>",
+	"addon_author" : "Rui Fontes <rui.fontes@tiflotecnia.com> and Oriol Gomez <ogomez.s92@gmail.com>",
 	# URL for the add-on documentation support
 	"addon_url" : "https://github.com/ruifontes/wordCount",
 	# Documentation file name

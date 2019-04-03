@@ -87,4 +87,4 @@ msgstr ""
 #~ msgstr "Novo"
 
 #~ msgid "Speech"
-#~ msgstr "Voz"
+  #~ msgstr "Voz"

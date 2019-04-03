@@ -13,4 +13,4 @@ Em qualquer editor de texto, ou num documento virtual, por exemplo num navegador
 
 Este comando pode ser modificado no diálogo "Definir comandos" na categoria "Contar palavras"
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/1.1/wordCount-1.2.nvda-addon
+[1]: https://github.com/ruifontes/wordCount/releases/download/1.2/wordCount-1.2.nvda-addon

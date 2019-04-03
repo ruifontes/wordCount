@@ -1,7 +1,8 @@
+﻿
 # Addon to count words #
 
 ## Informations ##
-* Authors: Oriol G�mez <ogomez.s92@gmail.com> and Rui Fontes <rui.fontes@tiflotecnia.com>
+* Authors: Oriol Gómez <ogomez.s92@gmail.com> and Rui Fontes <rui.fontes@tiflotecnia.com>
 * Download [stable version][1]
 * Compatibility: NVDA 2017.2 to 2019.1
 
@@ -12,4 +13,4 @@ In any text editor, or in a virtual document, for example in a web browser, PDF,
 
 This command can be modified in the "Input gestures" dialog in the "Word count" section.
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/1.1/wordCount-1.1.nvda-addon
+[1]: https://github.com/ruifontes/wordCount/releases/download/1.2/wordCount-1.2.nvda-addon

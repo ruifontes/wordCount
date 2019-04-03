@@ -1,9 +1,9 @@
-﻿msgid ""
+msgid ""
 msgstr ""
 "Project-Id-Version: WordCount\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2019-04-02 16:09+0200\n"
-"PO-Revision-Date: 2019-04-02 20:50+0100\n"
+"PO-Revision-Date: 2019-04-03 01:33+0100\n"
 "Last-Translator: José Manuel Delicado <jmdaweb@hotmail.com>\n"
 "Language-Team: Equipa portuguesa do NVDA: Ângelo Abrantes <ampa4374@gmail."
 "com> e Rui Fontes <rui.fontes@tiflotecnia.com>\n"
@@ -19,28 +19,26 @@ msgstr ""
 
 #: addon\globalPlugins\word-count.py:27
 msgid "select some text first."
-msgstr "Seleccione algum texto primeiro..."
+msgstr ""
 
 #: addon\globalPlugins\word-count.py:33
 #, python-format
 msgid "%s words"
-msgstr "%s palavras"
+msgstr ""
 
 #: addon\globalPlugins\word-count.py:35
 msgid "Announces how many words are in the selected text."
-msgstr "Anuncia o número de palavras no texto seleccionado"
+msgstr ""
 
 #: addon\globalPlugins\word-count.py:36
 msgid "Word count"
-msgstr "Contar palavras"
+msgstr ""
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 #: buildVars.py:17
-#, fuzzy
-#| msgid "Word count"
 msgid "Addon Word count"
-msgstr "Contar palavras"
+msgstr ""
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager

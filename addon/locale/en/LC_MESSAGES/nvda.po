@@ -7,36 +7,36 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 'wordCount' '1.2'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
-"POT-Creation-Date: 2019-04-03 23:21+0100\n"
-"PO-Revision-Date: 2019-04-03 23:33+0100\n"
+"POT-Creation-Date: 2019-04-05 01:12+0100\n"
+"PO-Revision-Date: 2019-04-05 01:24+0100\n"
+"Last-Translator: \n"
 "Language-Team: \n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.2.1\n"
-"Last-Translator: \n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"Language: pt\n"
 
 #. For translators: Message to announce when no text is selected
-#: addon\globalPlugins\word-count.py:28
+#: addon\globalPlugins\word-count.py:26
 msgid "select some text first."
 msgstr ""
 
-#. For translators: Message to announce the number of words
-#: addon\globalPlugins\word-count.py:35
+#. For translators: Message to announce the number of words and characters in selected text
+#: addon\globalPlugins\word-count.py:31
 #, python-brace-format
-msgid "{arg0} words"
+msgid "{arg0} words and {arg1} characters"
 msgstr ""
 
 #. For translators: Message to be announced during Keyboard Help
-#: addon\globalPlugins\word-count.py:38
-msgid "Announces how many words are in the selected text."
+#: addon\globalPlugins\word-count.py:34
+msgid "Announces how many words and characters are in the selected text."
 msgstr ""
 
 #. For translators: Name of the section in "Input gestures" dialog.
-#: addon\globalPlugins\word-count.py:40
-msgid "Word count"
+#: addon\globalPlugins\word-count.py:36
+msgid "Text editing"
 msgstr ""
 
 #. Add-on summary, usually the user visible name of the addon.
@@ -49,6 +49,6 @@ msgstr ""
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 #: buildVars.py:20
 msgid ""
-"Count the words of the selected text when you select some text and press "
-"NVDA control w."
+"announces the number of words and characters of the selected text when you "
+"select some text and press NVDA control w."
 msgstr ""

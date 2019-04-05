@@ -17,11 +17,11 @@ addon_info = {
 	"addon_summary" : _("Addon Word count"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-	"addon_description" : _("""Count the words of the selected text when you select some text and press NVDA control w."""),
+	"addon_description" : _("""announces the number of words and characters of the selected text when you select some text and press NVDA control w."""),
 	# version
-	"addon_version" : "1.2",
+	"addon_version" : "1.3",
 	# Author(s)
-	"addon_author" : "Rui Fontes <rui.fontes@tiflotecnia.com> and Oriol Gomez <ogomez.s92@gmail.com>",
+	"addon_author" : "Rui Fontes <rui.fontes@tiflotecnia.com> based on work of Oriol Gomez <ogomez.s92@gmail.com>",
 	# URL for the add-on documentation support
 	"addon_url" : "https://github.com/ruifontes/wordCount",
 	# Documentation file name

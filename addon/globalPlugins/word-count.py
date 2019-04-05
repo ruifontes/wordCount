@@ -5,40 +5,36 @@
 import globalPluginHandler
 import scriptHandler
 import textInfos
-import NVDAObjects
 from ui import message
 import api
-import winUser
 from globalCommands import SCRCAT_CONFIG
 import addonHandler
 addonHandler.initTranslation()
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_wordCount(self,gesture):
-		obj=api.getFocusObject()
-		treeInterceptor=obj.treeInterceptor
+		obj = api.getFocusObject()
+		treeInterceptor = obj.treeInterceptor
 		if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
-			obj=treeInterceptor
+			obj = treeInterceptor
 		try:
-			info=obj.makeTextInfo(textInfos.POSITION_SELECTION)
+			info = obj.makeTextInfo(textInfos.POSITION_SELECTION)
 		except (RuntimeError, NotImplementedError):
-			info=None
+			info = None
 		if not info or info.isCollapsed:
 			# For translators: Message to announce when no text is selected
 			message(_("select some text first."))
 		else:
-			wordcount=0
-			str=info.text
-			words=str.split()
-			wordcount+=len(words)
-			# For translators: Message to announce the number of words
-			message(_("{arg0} words").format(arg0 = wordcount))
+			words = info.text.split()
+			wordcount = len(words)
+			# For translators: Message to announce the number of words and characters in selected text
+			message(_("{arg0} words and {arg1} characters").format(arg0 = wordcount, arg1 = len(info.text)))
 
 	# For translators: Message to be announced during Keyboard Help
-	script_wordCount.__doc__ = _("Announces how many words are in the selected text.")
+	script_wordCount.__doc__ = _("Announces how many words and characters are in the selected text.")
 	# For translators: Name of the section in "Input gestures" dialog.
-	script_wordCount.category = _("Word count")
+	script_wordCount.category = _("Text editing")
 
-	__gestures={
+	__gestures = {
 		"kb:NVDA+control+w": "wordCount",
 	}

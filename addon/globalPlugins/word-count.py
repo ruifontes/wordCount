@@ -1,5 +1,5 @@
 # coding=utf-8
-# Copyright (C) 2019 Rui Fontes <rui.fontes@tiflotecnia.com> and Oriol Gómez <ogomez.s92@gmail.com>
+# Copyright (C) 2019 Rui Fontes <rui.fontes@tiflotecnia.com> based on a work of Oriol Gómez <ogomez.s92@gmail.com>
 # This file is covered by the GNU General Public License.
 
 import globalPluginHandler
@@ -25,10 +25,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			# For translators: Message to announce when no text is selected
 			message(_("select some text first."))
 		else:
-			words = info.text.split()
-			wordcount = len(words)
-			# For translators: Message to announce the number of words and characters in selected text
-			message(_("{arg0} words and {arg1} characters").format(arg0 = wordcount, arg1 = len(info.text)))
+
+			# For translators: Message to announce the number of words
+			message(_("{arg0} words and {arg1} characters").format(arg0 = len(info.text.split()), arg1 = len(info.text)))
 
 	# For translators: Message to be announced during Keyboard Help
 	script_wordCount.__doc__ = _("Announces how many words and characters are in the selected text.")
@@ -36,5 +35,5 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	script_wordCount.category = _("Text editing")
 
 	__gestures = {
-		"kb:NVDA+control+w": "wordCount",
+		"kb:control+shift+f12": "wordCount",
 	}

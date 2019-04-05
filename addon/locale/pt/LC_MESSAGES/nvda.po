@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordCount\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
-"POT-Creation-Date: 2019-04-05 01:12+0100\n"
-"PO-Revision-Date: 2019-04-05 01:29+0100\n"
+"POT-Creation-Date: 2019-04-06 00:29+0100\n"
+"PO-Revision-Date: 2019-04-06 00:35+0100\n"
 "Last-Translator: José Manuel Delicado <jmdaweb@hotmail.com>\n"
 "Language-Team: Equipa portuguesa do NVDA: Ângelo Abrantes <ampa4374@gmail."
 "com> e Rui Fontes <rui.fontes@tiflotecnia.com>\n"
@@ -22,37 +22,40 @@ msgstr ""
 msgid "select some text first."
 msgstr "Seleccione algum texto antes."
 
-#. For translators: Message to announce the number of words and characters in selected text
-#: addon\globalPlugins\word-count.py:31
+#. For translators: Message to announce the number of words
+#: addon\globalPlugins\word-count.py:30
 #, python-brace-format
 msgid "{arg0} words and {arg1} characters"
 msgstr "{arg0} palavras e {arg1} caracteres"
 
 #. For translators: Message to be announced during Keyboard Help
-#: addon\globalPlugins\word-count.py:34
+#: addon\globalPlugins\word-count.py:33
 msgid "Announces how many words and characters are in the selected text."
 msgstr "Anuncia quantas palavras e caracteres existem no texto seleccionado"
 
 #. For translators: Name of the section in "Input gestures" dialog.
-#: addon\globalPlugins\word-count.py:36
+#: addon\globalPlugins\word-count.py:35
 msgid "Text editing"
 msgstr "Edição de texto"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 #: buildVars.py:17
-msgid "Addon Word count"
-msgstr "Extra para contar palavras e caracteres"
+msgid "Count words and characters"
+msgstr "Contar palavras e caracteres"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 #: buildVars.py:20
 msgid ""
 "announces the number of words and characters of the selected text when you "
-"select some text and press NVDA control w."
+"select some text and press Control+Shift+F12."
 msgstr ""
-"Anuncia o número de palavras e de caracteres do texto seleccionado, após "
-"selecionar algum texto e pressionar NVDA control w."
+"Anuncia o número de palavras e de caracteres que existem no texto "
+"seleccionado, após selecionar algum texto e pressionar Control+Shift+F12"
+
+#~ msgid "Addon Word count"
+#~ msgstr "Extra para contar palavras e caracteres"
 
 #~ msgid "{arg0} words"
 #~ msgstr "{arg0} palavras"

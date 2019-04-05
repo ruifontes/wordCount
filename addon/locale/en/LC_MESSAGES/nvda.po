@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 'wordCount' '1.2'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
-"POT-Creation-Date: 2019-04-05 01:12+0100\n"
-"PO-Revision-Date: 2019-04-05 01:24+0100\n"
+"POT-Creation-Date: 2019-04-06 00:29+0100\n"
+"PO-Revision-Date: 2019-04-06 00:32+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt\n"
@@ -23,26 +23,26 @@ msgstr ""
 msgid "select some text first."
 msgstr ""
 
-#. For translators: Message to announce the number of words and characters in selected text
-#: addon\globalPlugins\word-count.py:31
+#. For translators: Message to announce the number of words
+#: addon\globalPlugins\word-count.py:30
 #, python-brace-format
 msgid "{arg0} words and {arg1} characters"
 msgstr ""
 
 #. For translators: Message to be announced during Keyboard Help
-#: addon\globalPlugins\word-count.py:34
+#: addon\globalPlugins\word-count.py:33
 msgid "Announces how many words and characters are in the selected text."
 msgstr ""
 
 #. For translators: Name of the section in "Input gestures" dialog.
-#: addon\globalPlugins\word-count.py:36
+#: addon\globalPlugins\word-count.py:35
 msgid "Text editing"
 msgstr ""
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 #: buildVars.py:17
-msgid "Addon Word count"
+msgid "Count words and characters"
 msgstr ""
 
 #. Add-on description
@@ -50,5 +50,5 @@ msgstr ""
 #: buildVars.py:20
 msgid ""
 "announces the number of words and characters of the selected text when you "
-"select some text and press NVDA control w."
+"select some text and press Control+Shift+F12."
 msgstr ""

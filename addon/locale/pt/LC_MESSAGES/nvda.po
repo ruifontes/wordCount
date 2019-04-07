@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordCount\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
-"POT-Creation-Date: 2019-04-06 00:29+0100\n"
-"PO-Revision-Date: 2019-04-06 00:35+0100\n"
+"POT-Creation-Date: 2019-04-07 01:26+0100\n"
+"PO-Revision-Date: 2019-04-07 01:32+0100\n"
 "Last-Translator: José Manuel Delicado <jmdaweb@hotmail.com>\n"
 "Language-Team: Equipa portuguesa do NVDA: Ângelo Abrantes <ampa4374@gmail."
 "com> e Rui Fontes <rui.fontes@tiflotecnia.com>\n"
@@ -18,41 +18,59 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #. For translators: Message to announce when no text is selected
-#: addon\globalPlugins\word-count.py:26
+#: addon\globalPlugins\word-count.py:29
 msgid "select some text first."
 msgstr "Seleccione algum texto antes."
 
-#. For translators: Message to announce the number of words
-#: addon\globalPlugins\word-count.py:30
+#. For translators: Message to announce the number of words and characters
+#: addon\globalPlugins\word-count.py:36
 #, python-brace-format
 msgid "{arg0} words and {arg1} characters"
 msgstr "{arg0} palavras e {arg1} caracteres"
 
+#. For translators: Message to announce the number of words, characters, paragraps and lines
+#: addon\globalPlugins\word-count.py:41
+#, python-brace-format
+msgid ""
+"{arg0} words and {arg1} characters in {arg2} paragraphs and {arg3} lines"
+msgstr ""
+"{arg0} palavras e {arg1} caracteres em {arg2} parágrafos e {arg3} linhas"
+
 #. For translators: Message to be announced during Keyboard Help
-#: addon\globalPlugins\word-count.py:33
-msgid "Announces how many words and characters are in the selected text."
-msgstr "Anuncia quantas palavras e caracteres existem no texto seleccionado"
+#: addon\globalPlugins\word-count.py:48
+msgid "Announces the number of elements in the selected text."
+msgstr "Anuncia o número de elementos do texto seleccionado"
 
 #. For translators: Name of the section in "Input gestures" dialog.
-#: addon\globalPlugins\word-count.py:35
+#: addon\globalPlugins\word-count.py:50
 msgid "Text editing"
 msgstr "Edição de texto"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 #: buildVars.py:17
-msgid "Count words and characters"
-msgstr "Contar palavras e caracteres"
+msgid "Count elements of the selected text"
+msgstr "Conta elementos do texto seleccionado"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 #: buildVars.py:20
 msgid ""
-"announces the number of words and characters of the selected text when you "
-"select some text and press Control+Shift+F12."
+"announces the number of words, characters, paragraphs and lines of the "
+"selected text when you select some text and press Control+Shift+F12. In some "
+"aplications, like Word, WordPad and DSpeech, it only announces word and "
+"characters, to avoid hanging NVDA."
 msgstr ""
-"Anuncia o número de palavras e de caracteres que existem no texto "
-"seleccionado, após selecionar algum texto e pressionar Control+Shift+F12"
+"Anuncia o número de palavras, caracteres, parágrafos e linhas do texto "
+"seleccionado, após selecionar algum texto e pressionar Control+Shift+F12. \n"
+"Nota: Em algumas aplicações, como Word, WordPad e DSpeech, apenas anuncia "
+"palavras e caracteres, para evitar pendurar o NVDA."
+
+#~ msgid "Announces how many words and characters are in the selected text."
+#~ msgstr "Anuncia quantas palavras e caracteres existem no texto seleccionado"
+
+#~ msgid "Count words and characters"
+#~ msgstr "Contar palavras e caracteres"
 
 #~ msgid "Addon Word count"
 #~ msgstr "Extra para contar palavras e caracteres"

@@ -14,14 +14,14 @@ addon_info = {
 	"addon_name" : "wordCount",
 	# Add-on summary, usually the user visible name of the addon.
 	# Translators: Summary for this add-on to be shown on installation and add-on information.
-	"addon_summary" : _("Count words and characters"),
+	"addon_summary" : _("Count elements of the selected text"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-	"addon_description" : _("""announces the number of words and characters of the selected text when you select some text and press Control+Shift+F12."""),
+	"addon_description" : _("""announces the number of words, characters, paragraphs and lines of the selected text when you select some text and press Control+Shift+F12. In some aplications, like Word, WordPad and DSpeech, it only announces word and characters, to avoid hanging NVDA."""),
 	# version
-	"addon_version" : "1.3.1",
+	"addon_version" : "1.4",
 	# Author(s)
-	"addon_author" : "Rui Fontes <rui.fontes@tiflotecnia.com> based on work of Oriol Gomez <ogomez.s92@gmail.com>",
+	"addon_author" : "Rui Fontes <rui.fontes@tiflotecnia.com>",
 	# URL for the add-on documentation support
 	"addon_url" : "https://github.com/ruifontes/wordCount",
 	# Documentation file name

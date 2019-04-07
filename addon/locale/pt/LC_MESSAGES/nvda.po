@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordCount\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
-"POT-Creation-Date: 2019-04-07 01:26+0100\n"
-"PO-Revision-Date: 2019-04-07 01:32+0100\n"
+"POT-Creation-Date: 2019-04-07 17:05+0100\n"
+"PO-Revision-Date: 2019-04-07 17:07+0100\n"
 "Last-Translator: José Manuel Delicado <jmdaweb@hotmail.com>\n"
 "Language-Team: Equipa portuguesa do NVDA: Ângelo Abrantes <ampa4374@gmail."
 "com> e Rui Fontes <rui.fontes@tiflotecnia.com>\n"
@@ -28,7 +28,7 @@ msgstr "Seleccione algum texto antes."
 msgid "{arg0} words and {arg1} characters"
 msgstr "{arg0} palavras e {arg1} caracteres"
 
-#. For translators: Message to announce the number of words, characters, paragraps and lines
+#. For translators: Message to announce the number of words, characters, paragraphs and lines
 #: addon\globalPlugins\word-count.py:41
 #, python-brace-format
 msgid ""

@@ -1,4 +1,4 @@
-# coding=utf-8
+#-*- coding:utf-8 -*-
 # Copyright (C) 2019 Rui Fontes <rui.fontes@tiflotecnia.com> based on a work of Oriol Gómez <ogomez.s92@gmail.com>
 # This file is covered by the GNU General Public License.
 
@@ -18,11 +18,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		treeInterceptor = obj.treeInterceptor
 		if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
 			obj = treeInterceptor
-		try:	
+		try:
 			info = obj.makeTextInfo(textInfos.POSITION_SELECTION)
 			info1 = 	obj.makeTextInfo("selection")
 		except (RuntimeError, NotImplementedError):
-			info = None	
+			info = None
 		if not info or info.isCollapsed:
 
 			# For translators: Message to announce when no text is selected
@@ -37,7 +37,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				arg0 = len(info.text.split()),
 				arg1 = len(info.text)))
 			else:
-				# For translators: Message to announce the number of words, characters, paragraps and lines
+				# For translators: Message to announce the number of words, characters, paragraphs and lines
 				message(_("{arg0} words and {arg1} characters in {arg2} paragraphs and {arg3} lines").format(
 				arg0 = len(info1.text.split()),
 				arg1 = len(info.text),

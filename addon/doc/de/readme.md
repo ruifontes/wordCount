@@ -1,4 +1,5 @@
-# Addon to count elements of selected text #
+[[!meta title="Erweiterung zum Zählen von Elementen des ausgewählten
+Textes"]]
 
 * Autor: Rui Fontes <rui.fontes@tiflotecnia.com>
 * lade [stabile version][1] herunter
@@ -12,9 +13,10 @@ Hinweis: In einigen Anwendungen, wie Word, WordPad und DSpeech, gibt die
 Erweiterung nur Wort- und Zeichenanzahl an, um zu vermeiden, dass sich NVDA
 aufhängt.
 
-In any text editor, or in a virtual document, for example in a web browser,
-PDF, email body, etc., select the desired text using the usual text
-selection commands and press Control+Shift+F12.
+Wählen Sie in einem beliebigen Text-Editor oder in einem virtuellen
+Dokument, z. B. in einem Web-Browser, PDF, E-Mail, etc., den gewünschten
+Text mit den üblichen Befehle zur Textauswahl aus und drücken Sie
+Strg+Umschalt+F12.
 
 Dieser Befehl kann im Dialog "Eingabenn" im Abschnitt "Textbearbeitung"
 geändert werden.

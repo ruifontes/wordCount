@@ -13,12 +13,12 @@ Hinweis: In einigen Anwendungen, wie Word, WordPad und DSpeech, gibt die
 Erweiterung nur Wort- und Zeichenanzahl an, um zu vermeiden, dass sich NVDA
 aufhängt.
 
-Wählen Sie in einem beliebigen Text-Editor oder in einem virtuellen
-Dokument, z. B. in einem Web-Browser, PDF, E-Mail, etc., den gewünschten
-Text mit den üblichen Befehle zur Textauswahl aus und drücken Sie
-Strg+Umschalt+F12.
+Wählen Sie in einer beliebigen Textverarbeitung oder in einem virtuellen
+Dokument, z. B. in einem Web-Browser, PDF Datei, Textkörper einer E-Mail,
+usw., den gewünschten Text mit den üblichen Befehlen zur Textauswahl aus und
+drücken Sie dann Strg+Umschalt+F12.
 
-Dieser Befehl kann im Dialog "Eingabenn" im Abschnitt "Textbearbeitung"
+Dieser Befehl kann im Dialog "Eingaben" im Abschnitt "Textbearbeitung"
 geändert werden.
 
 [[!tag dev stable]]

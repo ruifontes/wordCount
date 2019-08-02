@@ -2,7 +2,7 @@
 Textes"]]
 
 * Autor: Rui Fontes <rui.fontes@tiflotecnia.com>
-* lade [stabile version][1] herunter
+* [stabile version herunterladen][1]
 * Kompatibilität: NVDA 2017.2 bis 2019.1
 
 ## Verwendung ##

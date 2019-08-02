@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wordCount 1.4\n"
-"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2019-04-09 02:24+1000\n"
 "PO-Revision-Date: 2019-04-12 16:03+0300\n"
 "Language: bg\n"

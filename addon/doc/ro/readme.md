@@ -1,4 +1,4 @@
-# Supliment pentru numărarea elementelor textului selectat #
+# Addon to count elements of selected text #
 
 * Autor: Rui Fontes <rui.fontes@tiflotecnia.com>
 * Descărcați [versiunea stabilă][1]

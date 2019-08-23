@@ -1,4 +1,4 @@
-# Tæl elementer i valgt tekst #
+# Addon to count elements of selected text #
 
 * Forfatter: Rui Fontes <rui.fontes@tiflotecnia.com>
 * Download [stabil version][1]

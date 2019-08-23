@@ -1,5 +1,4 @@
-[[!meta title="Erweiterung zum Zählen von Elementen des ausgewählten
-Textes"]]
+# Addon to count elements of selected text #
 
 * Autor: Rui Fontes <rui.fontes@tiflotecnia.com>
 * [stabile version herunterladen][1]

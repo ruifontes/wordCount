@@ -1,4 +1,4 @@
-# Extra para contar elementos de texto seleccionado #
+# Addon to count elements of selected text #
 
 * Autor: Rui Fontes <rui.fontes@tiflotecnia.com>
 * Baixar [Versão estável][1]

@@ -1,4 +1,4 @@
-# Addon to count elements of selected text #
+# Wordcount #
 
 * Autor: Rui Fontes <rui.fontes@tiflotecnia.com>
 * Pobierz [Wersja stabilna][1]

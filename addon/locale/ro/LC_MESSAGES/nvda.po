@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the wordCount package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordCount 1.4\n"
+"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
+"POT-Creation-Date: 2019-04-09 02:24+1000\n"
+"PO-Revision-Date: 2019-04-12 23:25+0300\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: Florian Ionașcu <florianionascu@hotmail.com>\n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.2.1\n"
+
+#. For translators: Message to announce when no text is selected
+msgid "select some text first."
+msgstr "Selectați un text mai întâi."
+
+#. For translators: Message to announce the number of words and characters
+#, python-brace-format
+msgid "{arg0} words and {arg1} characters"
+msgstr "{arg0} cuvinte și {arg1} caractere"
+
+#. For translators: Message to announce the number of words, characters, paragraphs and lines
+#, python-brace-format
+msgid ""
+"{arg0} words and {arg1} characters in {arg2} paragraphs and {arg3} lines"
+msgstr ""
+"{arg0} cuvinte și {arg1} caractere în {arg2} paragrafe și {arg3} rânduri"
+
+#. For translators: Message to be announced during Keyboard Help
+msgid "Announces the number of elements in the selected text."
+msgstr "Anunță numărul elementelor din textul selectat."
+
+#. For translators: Name of the section in "Input gestures" dialog.
+msgid "Text editing"
+msgstr "Editare text"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Count elements of the selected text"
+msgstr "Numără elemente ale textului selectat"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid ""
+"announces the number of words, characters, paragraphs and lines of the "
+"selected text when you select some text and press Control+Shift+F12. In some "
+"aplications, like Word, WordPad and DSpeech, it only announces word and "
+"characters, to avoid hanging NVDA."
+msgstr ""
+"Acest supliment indică numărul de cuvinte, de caractere, de paragrafe și de "
+"rânduri din textul selectat prin apăsarea Control+Shift+F12. Notă: În unele "
+"aplicații precum Word, WordPad și DSpeech, acesta anunță numai cuvinte și "
+"caractere, pentru evitarea anumitor probleme cu NVDA."

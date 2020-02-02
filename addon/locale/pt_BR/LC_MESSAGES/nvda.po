@@ -1,0 +1,114 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WordCount 1.4\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
+"POT-Creation-Date: 2019-04-07 17:05+0100\n"
+"PO-Revision-Date: 2019-04-12 14:16+0100\n"
+"Last-Translator: Ângelo Miguel Abrantes <ampa4374@gmail.com>\n"
+"Language-Team: Equipa portuguesa do NVDA: Ângelo Abrantes <ampa4374@gmail."
+"com> e Rui Fontes <rui.fontes@tiflotecnia.com>\n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.1\n"
+"X-Poedit-Basepath: ../../../globalPlugins\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#. For translators: Message to announce when no text is selected
+msgid "select some text first."
+msgstr "Seleccione algum texto antes."
+
+#. For translators: Message to announce the number of words and characters
+#, python-brace-format
+msgid "{arg0} words and {arg1} characters"
+msgstr "{arg0} palavras e {arg1} caracteres"
+
+#. For translators: Message to announce the number of words, characters, paragraphs and lines
+#, python-brace-format
+msgid ""
+"{arg0} words and {arg1} characters in {arg2} paragraphs and {arg3} lines"
+msgstr ""
+"{arg0} palavras e {arg1} caracteres em {arg2} parágrafos e {arg3} linhas"
+
+#. For translators: Message to be announced during Keyboard Help
+msgid "Announces the number of elements in the selected text."
+msgstr "Anuncia o número de elementos do texto seleccionado"
+
+#. For translators: Name of the section in "Input gestures" dialog.
+msgid "Text editing"
+msgstr "Edição de texto"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Count elements of the selected text"
+msgstr "Conta elementos do texto seleccionado"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid ""
+"announces the number of words, characters, paragraphs and lines of the "
+"selected text when you select some text and press Control+Shift+F12. In some "
+"aplications, like Word, WordPad and DSpeech, it only announces word and "
+"characters, to avoid hanging NVDA."
+msgstr ""
+"Anuncia o número de palavras, caracteres, parágrafos e linhas do texto "
+"seleccionado, após selecionar algum texto e pressionar Control+Shift+F12. \n"
+"Nota: Em algumas aplicações, como Word, WordPad e DSpeech, apenas anuncia "
+"palavras e caracteres, para evitar pendurar o NVDA."
+
+#~ msgid "Announces how many words and characters are in the selected text."
+#~ msgstr "Anuncia quantas palavras e caracteres existem no texto seleccionado"
+
+#~ msgid "Count words and characters"
+#~ msgstr "Contar palavras e caracteres"
+
+#~ msgid "Addon Word count"
+#~ msgstr "Extra para contar palavras e caracteres"
+
+#~ msgid "{arg0} words"
+#~ msgstr "{arg0} palavras"
+
+#~ msgid "Word count"
+#~ msgstr "Contar Palavras"
+
+#~ msgid "Source text"
+#~ msgstr "Texto fonte"
+
+#~ msgid "Translated text"
+#~ msgstr "Texto traduzido"
+
+#~ msgid "Retranslated text"
+#~ msgstr "Texto retro traduzido"
+
+#~ msgid "Translation menu"
+#~ msgstr "Menu de tradução"
+
+#~ msgid "Translate from:"
+#~ msgstr "Traduzir de"
+
+#~ msgid "Swap languages"
+#~ msgstr "Alternar idiomas"
+
+#~ msgid "Translate into:"
+#~ msgstr "Traduzir para"
+
+#~ msgid "Favorite"
+#~ msgstr "favorito"
+
+#~ msgid "Play translation"
+#~ msgstr "Reproduzir a tradução"
+
+#~ msgid "Play source"
+#~ msgstr "Reproduzir a fonte"
+
+#~ msgid "Tools menu"
+#~ msgstr "Menu de ferramentas"
+
+#~ msgid "New"
+#~ msgstr "Novo"
+
+#~ msgid "Speech"
+#~ msgstr "Voz"

@@ -8,18 +8,18 @@ msgstr ""
 "Project-Id-Version: wordCount 1.4\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2019-04-09 02:24+1000\n"
-"PO-Revision-Date: 2019-05-31 15:30+0200\n"
+"PO-Revision-Date: 2020-01-07 17:56+0100\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: \n"
+"Last-Translator: Ondrej Rosík <ondrej.rosik@gmail.com>\n"
 "Language-Team: \n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 1.6.11\n"
 
 #. For translators: Message to announce when no text is selected
 msgid "select some text first."
-msgstr "Najprv vyberte text"
+msgstr "Najprv vyberte text."
 
 #. For translators: Message to announce the number of words and characters
 #, python-brace-format
@@ -34,7 +34,7 @@ msgstr "{arg0} slov a {arg1} znakov v {arg2} odsekoch a {arg3} riadkoch"
 
 #. For translators: Message to be announced during Keyboard Help
 msgid "Announces the number of elements in the selected text."
-msgstr "Oznamuje počet prvkov vo vybranom texte"
+msgstr "Oznamuje počet prvkov vo vybranom texte."
 
 #. For translators: Name of the section in "Input gestures" dialog.
 msgid "Text editing"
@@ -43,7 +43,7 @@ msgstr "Úprava textu"
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Count elements of the selected text"
-msgstr "Count elements of the selected text"
+msgstr "Štatistika textu"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
@@ -55,5 +55,5 @@ msgid ""
 msgstr ""
 "oznamuje počet slov, znakov, odsekov a riadkov vybraného textu, keď "
 "vyberiete nejaký text a stlačíte kláves CTRL+Shift+F12. V niektorých "
-"aplikáciách, ako sú Word, WordPad a DSpeech, oznamuje iba slovo a znaky, aby "
-"sa zabránilo zaveseniu NVDA."
+"aplikáciách, ako sú Word, WordPad a DSpeech, oznamuje iba slová a znaky, aby "
+"sa zabránilo zamrznutiu NVDA."

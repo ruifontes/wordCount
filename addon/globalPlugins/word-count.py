@@ -1,5 +1,5 @@
 #-*- coding:utf-8 -*-
-# Copyright (C) 2019 Rui Fontes <rui.fontes@tiflotecnia.com> based on a work of Oriol Gómez <ogomez.s92@gmail.com>
+# Copyright (C) 2019 Rui Fontes <rui.fontes@tiflotecnia.com> based on a work of Oriol GÃ³mez <ogomez.s92@gmail.com>
 # This file is covered by the GNU General Public License.
 
 import globalPluginHandler

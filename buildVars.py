@@ -19,7 +19,7 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description" : _("""announces the number of words, characters, paragraphs and lines of the selected text when you select some text and press Control+Shift+F12. In some aplications, like Word, WordPad and DSpeech, it only announces word and characters, to avoid hanging NVDA."""),
 	# version
-	"addon_version" : "1.4",
+	"addon_version" : "1.5",
 	# Author(s)
 	"addon_author" : "Rui Fontes <rui.fontes@tiflotecnia.com>",
 	# URL for the add-on documentation support
@@ -29,7 +29,7 @@ addon_info = {
 	# Minimum NVDA version supported (e.g. "2018.3.0")
 	"addon_minimumNVDAVersion" : "2017.2.0",
 	# Last NVDA version supported/tested (e.g. "2018.4.0", ideally more recent than minimum version)
-	"addon_lastTestedNVDAVersion" : "2019.1.0",
+	"addon_lastTestedNVDAVersion" : "2019.3.1",
 	# Add-on update channel (default is stable or None)
 	"addon_updateChannel" : None,
 }

@@ -1,24 +1,16 @@
-# Addon to count elements of selected text #
+﻿# Extra para contar elementos do texto seleccionado
 
+## Informações
 * Autor: Rui Fontes <rui.fontes@tiflotecnia.com>
-* Baixar [Versão estável][1]
-* Compatibilidade: NVDA 2017.2 até 2019.1
+* Descarregue a [versão estável][1]
+* Compatibilidade: NVDA 2019.3
 
-## Utilização: ##
-Este extra diz o número de palavras, caracteres, parágrafos e linhas do
-texto selecionado, pressionando Control+Shift+F12.
+## Utilização
+Este extra serve para anunciar o número de palavras, caracteres, parágrafos e linhas do texto seleccionado, bem como fornecer uma lista das palavras utilizadas e em que quantidade.
 
-Nota: Em algumas aplicações, como Word, WordPad e DSpeech, apenas é indicado
-o número de palavras e caracteres, para evitar a interrupção do NVDA.
+Em qualquer editor de texto, ou num documento virtual, por exemplo num navegador web, PDF, corpo de e-mail, etc, seleccione o texto pretendido, usando os comandos usuais de selecção de texto, e pressione Control+Shift+F12 para obter o número de caracteres e palavras.
+Para obter a lista das palavras utilizadas, pressione Control+Shift+F11.
 
-Em qualquer editor de texto, ou num documento virtual, por exemplo, num
-navegador da Web, PDF, corpo de email, etc., seleccione o texto desejado,
-usando os comandos normais de selecção de texto, e pressione
-Control+Shift+F12.
+Estes comandos podem ser modificados no diálogo "Definir comandos" na categoria "Edição de texto".
 
-Este comando pode ser alterado, na caixa de diálogo "definir comandos" na
-categoria "edição de texto".
-
-[[!tag dev stable]]
-
-[1]: https://addons.nvda-project.org/files/get.php?file=wc
+[1]: https://github.com/ruifontes/wordCount/releases/download/1.4/wordCount-1.4.nvda-addon

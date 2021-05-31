@@ -1,7 +1,7 @@
 ﻿# Extra para contar elementos do texto seleccionado
 
 ## Informações
-* Autor: Rui Fontes <rui.fontes@tiflotecnia.com>
+* Autores: Rui Fontes <rui.fontes@tiflotecnia.com> e Ângelo Abrantes <ampa4374@gmail.com>
 * Descarregue a [versão estável][1]
 * Compatibilidade: NVDA 2019.3
 
@@ -13,4 +13,4 @@ Para obter a lista das palavras utilizadas, pressione Control+Shift+F11.
 
 Estes comandos podem ser modificados no diálogo "Definir comandos" na categoria "Edição de texto".
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/1.4/wordCount-1.4.nvda-addon
+[1]: https://addons.nvda-project.org/files/get.php?file=wc

@@ -1,9 +1,9 @@
 ﻿# Addon to count elements of selected text
 
 ## Informations
-* Author: Rui Fontes <rui.fontes@tiflotecnia.com>
+* Authors: Rui Fontes <rui.fontes@tiflotecnia.com> and  Angelo Abrantes <ampa4374@gmail.com>
 * Download [stable version][1]
-* Compatibility: NVDA 2019.3 to 2020.1
+* Compatibility: NVDA 2019.3 to 2021.1
 
 ## Use
 This addon announces the number of words, characters, paragraphs and lines of the selected text by pressing Control+Shift+F12.

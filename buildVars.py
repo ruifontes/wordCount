@@ -26,9 +26,9 @@ addon_info = {
 	"addon_description": _("""announces the number of words, characters, paragraphs and lines of the selected text when you select some text and press Control+Shift+F12.
 It also can create a ordered list of the words used and allow to display the lines containing a word pressing Control+Shift+F11."""),
 	# version
-	"addon_version": "21.05",
+	"addon_version": "2022.03",
 	# Author(s)
-	"addon_author": "Rui Fontes <rui.fontes@tiflotecnia.com> e Ângelo Abrantes <ampa4374@gmail.com>",
+	"addon_author": "Rui Fontes <rui.fontes@tiflotecnia.com> and Ângelo Abrantes <ampa4374@gmail.com>",
 	# URL for the add-on documentation support
 	"addon_url": "https://github.com/ruifontes/wordCount",
 	# Documentation file name
@@ -36,7 +36,7 @@ It also can create a ordered list of the words used and allow to display the lin
 	# Minimum NVDA version supported (e.g. "2018.3.0", minor version is optional)
 	"addon_minimumNVDAVersion": "2019.3",
 	# Last NVDA version supported/tested (e.g. "2018.4.0", ideally more recent than minimum version)
-	"addon_lastTestedNVDAVersion": "2021.1",
+	"addon_lastTestedNVDAVersion": "2022.1",
 	# Add-on update channel (default is None, denoting stable releases,
 	# and for development releases, use "dev".)
 	# Do not change unless you know what you are doing!

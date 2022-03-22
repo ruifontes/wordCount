@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-# Copyright (C) 2019 Rui Fontes <rui.fontes@tiflotecnia.com> based on a work of Oriol Gomez <ogomez.s92@gmail.com>
+# Copyright (C) 2022 Rui Fontes <rui.fontes@tiflotecnia.com> based on a work of Oriol Gomez <ogomez.s92@gmail.com>
 # This file is covered by the GNU General Public License.
 # See the file COPYING for more details.
 
@@ -137,6 +137,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		"kb:control+shift+f11": "Listing",
 		"kb:control+shift+f12": "wordCount",
 	}
+
+
+# Avoid use on secure screens
+if globalVars.appArgs.secure:
+	# Override the global plugin to disable it.
+	GlobalPlugin = globalPluginHandler.GlobalPlugin
+
 
 class WordListDialog(wx.Dialog):
 	# A dialog  to insert words from a list.

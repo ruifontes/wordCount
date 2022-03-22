@@ -2,8 +2,9 @@
 
 ## Informations
 * Authors: Rui Fontes <rui.fontes@tiflotecnia.com> and  Angelo Abrantes <ampa4374@gmail.com>
+* Updated in 21/03/2022
 * Download [stable version][1]
-* Compatibility: NVDA 2019.3 to 2021.1
+* Compatibility: NVDA version 2019.3 and beyond
 
 ## Use
 This addon announces the number of words, characters, paragraphs and lines of the selected text by pressing Control+Shift+F12.

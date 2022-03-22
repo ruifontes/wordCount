@@ -1,9 +1,10 @@
-﻿# Extra para contar elementos do texto seleccionado
+# Extra para contar elementos do texto seleccionado
 
 ## Informações
 * Autores: Rui Fontes <rui.fontes@tiflotecnia.com> e Ângelo Abrantes <ampa4374@gmail.com>
+* Atualizado em 21/03/2022
 * Descarregue a [versão estável][1]
-* Compatibilidade: NVDA 2019.3
+* Compatibilidade: NVDA 2019.3 e seguintes
 
 ## Utilização
 Este extra serve para anunciar o número de palavras, caracteres, parágrafos e linhas do texto seleccionado, bem como fornecer uma lista das palavras utilizadas e em que quantidade.

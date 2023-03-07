@@ -1,8 +1,8 @@
 ﻿# Addon to count elements of selected text
 
 ## Informations
-* Authors: Rui Fontes <rui.fontes@tiflotecnia.com> and  Angelo Abrantes <ampa4374@gmail.com>
-* Updated in 21/03/2022
+* Authors: Rui Fontes <rui.fontes@tiflotecnia.com>, Angelo Abrantes <ampa4374@gmail.com> and Abel Passos Jr. <abel.passos@gmail.com>"
+* Updated in 06/03/2023
 * Download [stable version][1]
 * Compatibility: NVDA version 2019.3 and beyond
 
@@ -13,6 +13,7 @@ It also create a ordered list of the words used and allow to display the lines c
 In any text editor, or in a virtual document, for example in a web browser, PDF, email body, etc., select the desired text using the usual text selection commands and press Control+Shift+f12.
 
 To get a list of words used, just press Control+Shift+f11.
+In this window, you can select the presentation order, alphabetically or by number of occurrences.
 
 This commands can be modified in the "Input gestures" dialog in the "Text editing" section.
 

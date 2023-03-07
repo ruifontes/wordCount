@@ -5,112 +5,165 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 'wordCount' '2.0'\n"
-"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
-"POT-Creation-Date: 2020-03-28 20:54+0000\n"
-"PO-Revision-Date: 2021-05-31 15:39+0100\n"
+"Project-Id-Version: 'wordCount' '2022.03'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2023-03-07 02:10+0000\n"
+"PO-Revision-Date: 2023-03-07 02:49+0000\n"
+"Last-Translator: Dragan Ratkovich\n"
 "Language-Team: \n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.3\n"
-"Last-Translator: \n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.2.2\n"
 
-#. For translators: Message to announce when no text is selected
-#: addon\globalPlugins\word-count.py:43
-msgid "select some text first."
-msgstr "сначала выделите какой-нибудь текст."
+#. Translators: Message to be announced during Keyboard Help
+#: addon\globalPlugins\wordCount\__init__.py:40
+msgid "Announces the number of elements in the selected text."
+msgstr "Объявляет количество элементов в выделенном тексте."
 
-#. For translators: Message to announce the number of words and characters
-#: addon\globalPlugins\word-count.py:67
-#, python-brace-format
+#. Translators: Name of the section in "Input gestures" dialog.
+#: addon\globalPlugins\wordCount\__init__.py:42
+#: addon\globalPlugins\wordCount\__init__.py:83
+msgid "Text editing"
+msgstr "Редактирование текста"
+
+#. Translators: Message to announce the number of words and characters
+#: addon\globalPlugins\wordCount\__init__.py:60
+#, fuzzy, python-brace-format
+#| msgid ""
+#| "{arg0} words and {arg1} characters in {arg2} paragraphs and {arg3} lines"
 msgid "{arg0} words and {arg1} characters in {arg2} paragraphs"
-msgstr "{arg0} слов и {arg1} символов в {arg2} абзацев"
+msgstr "{arg0} слов и {arg1} символов в {arg2} абзацев и {arg3} строк"
 
-#. For translators: Message to announce the number of words, characters, paragraphs and lines
-#: addon\globalPlugins\word-count.py:81
+#. Translators: Message to announce the number of words, characters, paragraphs and lines
+#: addon\globalPlugins\wordCount\__init__.py:73
 #, python-brace-format
 msgid ""
 "{arg0} words and {arg1} characters in {arg2} paragraphs and {arg3} lines"
 msgstr "{arg0} слов и {arg1} символов в {arg2} абзацев и {arg3} строк"
 
-#: addon\globalPlugins\word-count.py:97
-msgid "Error"
-msgstr "ошибка"
-
-#. For translators: Message to announce it is working...
-#: addon\globalPlugins\word-count.py:120
-msgid "Wait please..."
-msgstr "пожалуйста, подождите..."
-
-#. For translators: Message to be announced during Keyboard Help
-#: addon\globalPlugins\word-count.py:127
-msgid "Announces the number of elements in the selected text."
-msgstr "Объявляет количество элементов в выделенном тексте."
-
-#. For translators: Name of the section in "Input gestures" dialog.
-#: addon\globalPlugins\word-count.py:129 addon\globalPlugins\word-count.py:134
-msgid "Text editing"
-msgstr "Редактирование текста"
-
-#. For translators: Message to be announced during Keyboard Help
-#: addon\globalPlugins\word-count.py:132
+#. Translators: Message to be announced during Keyboard Help
+#: addon\globalPlugins\wordCount\__init__.py:81
 msgid "Opens a dialog with the list of words found in the document."
 msgstr "Открывает диалог со списком слов, найденных в документе."
 
-#. Translators: Title of the dialog.
-#: addon\globalPlugins\word-count.py:155
-msgid "Word list"
-msgstr "Список слов"
+#. Translators: Message to announce it is working...
+#: addon\globalPlugins\wordCount\__init__.py:87
+msgid "Wait please..."
+msgstr "Пожалуйста, подождите..."
 
-#: addon\globalPlugins\word-count.py:166
-msgid "There are no words"
-msgstr "Нет слов"
+#: addon\globalPlugins\wordCount\configPanel.py:13
+#: addon\globalPlugins\wordCount\dialogs.py:28
+#: addon\globalPlugins\wordCount\variables.py:26
+msgid "Alphabetically"
+msgstr ""
 
-#. the list box
-#. Translators: This is the label of the list  appearing on List of Words dialog.
-#: addon\globalPlugins\word-count.py:173
+#: addon\globalPlugins\wordCount\configPanel.py:13
+#: addon\globalPlugins\wordCount\dialogs.py:28
+#: addon\globalPlugins\wordCount\variables.py:26
+#, fuzzy
+#| msgid "&Show occurrences"
+msgid "By number of occurences"
+msgstr "&Показать вхождения"
+
+#. Translators: Label of a  combobox used to choose the sort order
+#: addon\globalPlugins\wordCount\configPanel.py:24
+msgid "&Order by:"
+msgstr ""
+
+#. Translators: Checkbox name in the configuration dialog
+#: addon\globalPlugins\wordCount\configPanel.py:34
+msgid "Check for updates at startup"
+msgstr ""
+
+#. Translators: Title of the dialog showing the list of words
+#: addon\globalPlugins\wordCount\dialogs.py:21
 msgid "Words and its occurrences"
 msgstr "Слова и их вхождения"
 
-#. Translators: This is a label of a button appearing on List of Words dialog.
-#: addon\globalPlugins\word-count.py:182
+#. Translators: Ordering options
+#: addon\globalPlugins\wordCount\dialogs.py:28
+msgid "Order by:"
+msgstr ""
+
+#. Translators: Button to reorder the list
+#: addon\globalPlugins\wordCount\dialogs.py:33
+msgid "&Reorder"
+msgstr ""
+
+#. Translators: Name of button to show the list of lines containing the selected word
+#: addon\globalPlugins\wordCount\dialogs.py:47
 msgid "&Show occurrences"
 msgstr "&Показать вхождения"
 
-#: addon\globalPlugins\word-count.py:186 addon\globalPlugins\word-count.py:292
-msgid "&Close"
-msgstr "закрыть"
-
-#. Translators: Title of the dialog.
-#. the list box
-#. Translators: This is the label of the list  appearing on List of Words dialog.
-#: addon\globalPlugins\word-count.py:244 addon\globalPlugins\word-count.py:281
+#. Translators: Name of dialog showing the list of lines containing the selected word
+#: addon\globalPlugins\wordCount\dialogs.py:96
 msgid "Lines containing our word"
 msgstr "Строки, содержащие наше слово"
 
-#. Translators: This is a label of a button appearing on List of Words dialog.
-#: addon\globalPlugins\word-count.py:288
-msgid "&Ok"
-msgstr "Окей"
+#. Translators: Message dialog box to ask user if wants to update.
+#: addon\globalPlugins\wordCount\update.py:82
+msgid ""
+"It is available a new version of this add-on.\n"
+" Do you want to update?"
+msgstr ""
+
+#. Translators: Message dialog box to inform user that the add-on is not compatible
+#: addon\globalPlugins\wordCount\update.py:117
+msgid ""
+"This new version of this add-on is not compatible with your version of "
+"NVDA.\n"
+" The update process will be terminated."
+msgstr ""
+
+#. Translators: Message to announce when no text is selected
+#: addon\globalPlugins\wordCount\variables.py:43
+msgid "select some text first."
+msgstr "сначала выделите какой-нибудь текст."
+
+#: addon\globalPlugins\wordCount\variables.py:65
+msgid "Error"
+msgstr "Ошибка"
+
+#: addon\globalPlugins\wordCount\variables.py:126
+msgid "There are no words"
+msgstr "Нет слов"
 
 #. Add-on summary, usually the user visible name of the addon.
-#. Translators: Summary for this add-on to be shown on installation and add-on information.
-#: buildVars.py:17
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+#: buildVars.py:23
 msgid "Count elements of the selected text"
 msgstr "Подсчитать элементы выделенного текста"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-#: buildVars.py:20
+#: buildVars.py:26
+#, fuzzy
 msgid ""
 "announces the number of words, characters, paragraphs and lines of the "
-"selected text when you select some text and press Control+Shift+F12. It also "
-"create a ordered list of the words used and allow to display the lines "
-"containing a word."
+"selected text when you select some text and press Control+Shift+F12.\n"
+"\tIt also can create a list of the words used, ordered by number of "
+"occcurrences or alphabetically, and allow to display the lines containing a "
+"word pressing Control+Shift+F11."
 msgstr ""
 "объявляет количество слов, символов, абзацев и строк выделенного текста, "
-"когда вы выделяете текст и нажимаете Control + Shift + F12. "
+"когда вы выделяете текст и нажимаете Control + Shift + F12.\n"
+"Он также может создавать упорядоченный список используемых слов и позволяет "
+"отображать строки, содержащие слово, нажав Control+Shift+F11."
+
+#, fuzzy, python-brace-format
+#~ msgid "{arg0} words and {arg1} characters"
+#~ msgstr "{arg0} слов и {arg1} символов в {arg2} абзацев"
+
+#~ msgid "Word list"
+#~ msgstr "Список слов"
+
+#~ msgid "&Close"
+#~ msgstr "&Закрыть"
+
+#~ msgid "&Ok"
+#~ msgstr "&Ok"

@@ -1,7 +1,7 @@
 ﻿# Addon to count elements of selected text #
 
 * 作者: Rui Fontes <rui.fontes@tiflotecnia.com>, Angelo Abrantes <ampa4374@gmail.com> 及び Abel Passos Jr. <abel.passos@gmail.com>
-* 06/03/2023に更新
+* 11/03/2023に更新
 * ダウンロード [安定版][1]
 * 互換性: NVDA バージョン 2019.3以降
 # 使用方法 #
@@ -10,4 +10,4 @@
 使用されている単語のリストを取得するには、Control+Shift+f11を押します。
 このコマンドは、「入力ジェスチャ」ダイアログの「テキスト編集」セクションで変更出来ます。
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/2023.03/wordCount-2023.03.nvda-addon
+[1]: https://github.com/ruifontes/wordCount/releases/download/2023.03.11/wordCount-2023.03.11.nvda-addon

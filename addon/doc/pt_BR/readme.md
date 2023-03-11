@@ -2,7 +2,7 @@
 
 ## Informações
 * Autores: Rui Fontes <rui.fontes@tiflotecnia.com>, Ângelo Abrantes <ampa4374@gmail.com> e Abel Passos Jr. <abel.passos@gmail.com>
-* Atualizado em 06/03/2023
+* Atualizado em 11/03/2023
 * Descarregue a [versão estável][1]
 * Compatibilidade: NVDA 2019.3 e seguintes
 
@@ -15,4 +15,4 @@ Nesta janela, pode seleccionar a ordem de apresentação, alfabeticamente ou por
 
 Estes comandos podem ser modificados no diálogo "Definir comandos" na categoria "Edição de texto".
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/2023.03/wordCount-2023.03.nvda-addon
+[1]: https://github.com/ruifontes/wordCount/releases/download/2023.03.11/wordCount-2023.03.11.nvda-addon

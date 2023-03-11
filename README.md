@@ -2,7 +2,7 @@
 
 ## Informations
 * Authors: Rui Fontes <rui.fontes@tiflotecnia.com>, Angelo Abrantes <ampa4374@gmail.com> and Abel Passos Jr. <abel.passos@gmail.com>"
-* Updated in 06/03/2023
+* Updated in 11/03/2023
 * Download [stable version][1]
 * Compatibility: NVDA version 2019.3 and beyond
 
@@ -17,4 +17,4 @@ In this window, you can select the presentation order, alphabetically or by numb
 
 This commands can be modified in the "Input gestures" dialog in the "Text editing" section.
 
-[1]: https://addons.nvda-project.org/files/get.php?file=wc
+[1]: https://github.com/ruifontes/wordCount/releases/download/2023.03.11/wordCount-2023.03.11.nvda-addon

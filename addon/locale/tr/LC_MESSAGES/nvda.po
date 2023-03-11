@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 'wordCount' 2022.03\n"
+"Project-Id-Version: 'wordCount' 2023.03\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2023-03-07 02:10+0000\n"
-"PO-Revision-Date: 2023-03-07 02:50+0000\n"
+"PO-Revision-Date: 2023-03-11 13:26+0300\n"
 "Last-Translator: Umut KORKMAZ <umutkork@gmail.com>\n"
 "Language-Team: Umut KORKMAZ <umutkork@gmail.com>\n"
 "Language: tr_TR\n"
@@ -59,25 +59,23 @@ msgstr "Lütfen bekleyin..."
 #: addon\globalPlugins\wordCount\dialogs.py:28
 #: addon\globalPlugins\wordCount\variables.py:26
 msgid "Alphabetically"
-msgstr ""
+msgstr "Alfabetik olarak"
 
 #: addon\globalPlugins\wordCount\configPanel.py:13
 #: addon\globalPlugins\wordCount\dialogs.py:28
 #: addon\globalPlugins\wordCount\variables.py:26
-#, fuzzy
-#| msgid "&Show occurrences"
 msgid "By number of occurences"
-msgstr "&Bulundukları satırları göster"
+msgstr "Oluşum sayısına göre"
 
 #. Translators: Label of a  combobox used to choose the sort order
 #: addon\globalPlugins\wordCount\configPanel.py:24
 msgid "&Order by:"
-msgstr ""
+msgstr "&Sırala:"
 
 #. Translators: Checkbox name in the configuration dialog
 #: addon\globalPlugins\wordCount\configPanel.py:34
 msgid "Check for updates at startup"
-msgstr ""
+msgstr "Başlangıçta güncellemeleri denetle"
 
 #. Translators: Title of the dialog showing the list of words
 #: addon\globalPlugins\wordCount\dialogs.py:21
@@ -87,12 +85,12 @@ msgstr "Kelimeler ve bulundukları satırlar"
 #. Translators: Ordering options
 #: addon\globalPlugins\wordCount\dialogs.py:28
 msgid "Order by:"
-msgstr ""
+msgstr "Sırala:"
 
 #. Translators: Button to reorder the list
 #: addon\globalPlugins\wordCount\dialogs.py:33
 msgid "&Reorder"
-msgstr ""
+msgstr "Yeniden sı&rala"
 
 #. Translators: Name of button to show the list of lines containing the selected word
 #: addon\globalPlugins\wordCount\dialogs.py:47
@@ -110,6 +108,8 @@ msgid ""
 "It is available a new version of this add-on.\n"
 " Do you want to update?"
 msgstr ""
+"Bu eklentinin yeni bir sürümü mevcut.\n"
+" Güncellemek ister misiniz?"
 
 #. Translators: Message dialog box to inform user that the add-on is not compatible
 #: addon\globalPlugins\wordCount\update.py:117
@@ -118,6 +118,8 @@ msgid ""
 "NVDA.\n"
 " The update process will be terminated."
 msgstr ""
+"Bu eklentinin yeni sürümü, NVDA sürümünüzle uyumlu değil.\n"
+" Güncelleme işlemi sonlandırılacak."
 
 #. Translators: Message to announce when no text is selected
 #: addon\globalPlugins\wordCount\variables.py:43
@@ -142,12 +144,6 @@ msgstr "Seçili metnin öğelerini say"
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 #: buildVars.py:26
-#, fuzzy
-#| msgid ""
-#| "announces the number of words, characters, paragraphs and lines of the "
-#| "selected text when you select some text and press Control+Shift+F12. It "
-#| "also create a ordered list of the words used and allow to display the "
-#| "lines containing a word."
 msgid ""
 "announces the number of words, characters, paragraphs and lines of the "
 "selected text when you select some text and press Control+Shift+F12.\n"
@@ -155,10 +151,11 @@ msgid ""
 "occcurrences or alphabetically, and allow to display the lines containing a "
 "word pressing Control+Shift+F11."
 msgstr ""
-"bir metin seçip Control+Shift+F12 tuşlarına bastığınızda seçilen metnin "
-"Kelime, karakter, paragraf ve satır sayısını duyurur. Ayrıca, kullanılan "
-"kelimelerin sıralı bir listesini oluşturur ve bir kelimeyi içeren satırların "
-"görüntülenmesini sağlar."
+"bir metin seçip Control+Shift+F12 tuşlarına bastığınızda seçili metnin "
+"sözcük, karakter, paragraf ve satır sayısını duyurur.\n"
+"\tAyrıca, kullanılan sözcüklerin tekrar sayısına göre veya alfabetik olarak "
+"sıralanmış bir listesini oluşturabilir ve Control+Shift+F11 tuşlarına "
+"basarak sözcük içeren satırların görüntülenmesini sağlayabilir."
 
 #~ msgid "Word list"
 #~ msgstr "Kelime listesi"

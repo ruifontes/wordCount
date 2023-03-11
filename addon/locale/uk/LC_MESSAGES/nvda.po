@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wordCount 1.4\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2023-03-07 02:10+0000\n"
-"PO-Revision-Date: 2023-03-07 02:51+0000\n"
+"POT-Creation-Date: 2023-03-07 20:35+0200\n"
+"PO-Revision-Date: 2023-03-07 20:45+0200\n"
 "Last-Translator: Volodymyr Pyrih <vp88.mobile@gmail.com>\n"
 "Language-Team: Ukrainian NVDA Community\n"
 "Language: uk\n"
@@ -61,25 +61,23 @@ msgstr "Зачекайте, будь ласка..."
 #: addon\globalPlugins\wordCount\dialogs.py:28
 #: addon\globalPlugins\wordCount\variables.py:26
 msgid "Alphabetically"
-msgstr ""
+msgstr "За абеткою"
 
 #: addon\globalPlugins\wordCount\configPanel.py:13
 #: addon\globalPlugins\wordCount\dialogs.py:28
 #: addon\globalPlugins\wordCount\variables.py:26
-#, fuzzy
-#| msgid "&Show occurrences"
 msgid "By number of occurences"
-msgstr "&Показати випадки"
+msgstr "За кількістю випадків"
 
 #. Translators: Label of a  combobox used to choose the sort order
 #: addon\globalPlugins\wordCount\configPanel.py:24
 msgid "&Order by:"
-msgstr ""
+msgstr "&Сортувати:"
 
 #. Translators: Checkbox name in the configuration dialog
 #: addon\globalPlugins\wordCount\configPanel.py:34
 msgid "Check for updates at startup"
-msgstr ""
+msgstr "Перевіряти оновлення під час запуску"
 
 #. Translators: Title of the dialog showing the list of words
 #: addon\globalPlugins\wordCount\dialogs.py:21
@@ -89,12 +87,12 @@ msgstr "Слова і випадки їх використання"
 #. Translators: Ordering options
 #: addon\globalPlugins\wordCount\dialogs.py:28
 msgid "Order by:"
-msgstr ""
+msgstr "Сортувати:"
 
 #. Translators: Button to reorder the list
 #: addon\globalPlugins\wordCount\dialogs.py:33
 msgid "&Reorder"
-msgstr ""
+msgstr "&Пересортувати"
 
 #. Translators: Name of button to show the list of lines containing the selected word
 #: addon\globalPlugins\wordCount\dialogs.py:47
@@ -112,6 +110,8 @@ msgid ""
 "It is available a new version of this add-on.\n"
 " Do you want to update?"
 msgstr ""
+"Доступна нова версія цього додатка\n"
+" Хочете оновити?"
 
 #. Translators: Message dialog box to inform user that the add-on is not compatible
 #: addon\globalPlugins\wordCount\update.py:117
@@ -120,6 +120,8 @@ msgid ""
 "NVDA.\n"
 " The update process will be terminated."
 msgstr ""
+"Нова версія цього додатка несумісна з вашою версією NVDA.\n"
+" Процес оновлення буде перервано."
 
 #. Translators: Message to announce when no text is selected
 #: addon\globalPlugins\wordCount\variables.py:43
@@ -144,12 +146,6 @@ msgstr "Підрахунок елементів у виділеному текс
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 #: buildVars.py:26
-#, fuzzy
-#| msgid ""
-#| "announces the number of words, characters, paragraphs and lines of the "
-#| "selected text when you select some text and press Control+Shift+F12.\n"
-#| "It also can create a ordered list of the words used and allow to display "
-#| "the lines containing a word pressing Control+Shift+F11."
 msgid ""
 "announces the number of words, characters, paragraphs and lines of the "
 "selected text when you select some text and press Control+Shift+F12.\n"
@@ -159,8 +155,9 @@ msgid ""
 msgstr ""
 "Промовляє кількість слів, символів, абзаців і рядків у виділеному тексті, "
 "коли ви виділите якийсь текст і натиснете Control+Shift+F12.\n"
-"Він також створює впорядкований список використаних слів і дозволяє показати "
-"рядки, які їх містять, після натискання Control+Shift+F11."
+"\tВін також може створити список використаних слів, відсортованих за "
+"кількістю випадків або за абеткою, і дозволяє показати рядки, які містять "
+"слово, після натискання Control+Shift+F11."
 
 #~ msgid "Word list"
 #~ msgstr "Список слів"

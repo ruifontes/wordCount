@@ -26,7 +26,7 @@ addon_info = {
 	"addon_description": _("""announces the number of words, characters, paragraphs and lines of the selected text when you select some text and press Control+Shift+F12.
 	It also can create a list of the words used, ordered by number of occcurrences or alphabetically, and allow to display the lines containing a word pressing Control+Shift+F11."""),
 	# version
-	"addon_version": "2023.03",
+	"addon_version": "2023.03.11",
 	# Author(s)
 	"addon_author": "Rui Fontes <rui.fontes@tiflotecnia.com>, Ângelo Abrantes <ampa4374@gmail.com> and Abel Passos Jr. <abel.passos@gmail.com>",
 	# URL for the add-on documentation support

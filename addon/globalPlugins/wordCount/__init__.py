@@ -37,36 +37,21 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		category=_("Text editing"), 
 		gesture="kb:control+shift+f12")
 	def script_wordCount(self,gesture):
-		countWords()
-		from .vars import info, text1, text2
-		# List of apps that needs \r as end of paragrap.
-		apps = ["winword", "wordpad", "notepad", "wordim", "soffice", "dspeech", "outlook"]
-		if api.getFocusObject().appModule.appName in apps:
-			# Counting paragraphs for apps that needs \r as end of paragrap.
-			paragraphcount = 0
-			for line in info.text:
-				if "\r" in line:
-					paragraphcount = paragraphcount + 1
-
+		info, text2 = countWords()
+		if info == None:
+			return
+		else:
+			# List of apps that needs \r as end of paragrap.
+			apps = ["winword", "wordpad", "notepad", "wordim", "soffice", "dspeech", "outlook"]
+			end_of_paragraph = "\r" if api.getFocusObject().appModule.appName in apps else "\n"
+			# Counting paragraphs.
+			paragraphcount = info.text.count(end_of_paragraph)
 			# Translators: Message to announce the number of words and characters
 			ui.message(_("{arg0} words and {arg1} characters in {arg2} paragraphs").format(
-			arg0 = len(text2.split()),
-			arg1 = len(info.text),
-			arg2 = paragraphcount))
-
-		else:
-			# Counting paragraphs for apps that needs \n as end of paragrap.
-			paragraphcount = 0
-			for line in info.text:
-				if "\n" in line:
-					paragraphcount = paragraphcount + 1
-
-			# Translators: Message to announce the number of words, characters, paragraphs and lines
-			ui.message(_("{arg0} words and {arg1} characters in {arg2} paragraphs and {arg3} lines").format(
-			arg0 = len(text2.split()),
-			arg1 = len(text1),
-			arg2 = paragraphcount,
-			arg3 = len(info.text.splitlines())))
+				arg0 = len(text2.split()),
+				arg1 = len(info.text),
+				arg2 = paragraphcount)
+			)
 
 	@script( 
 		# Translators: Message to be announced during Keyboard Help 
@@ -77,7 +62,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_Listing(self, gesture):
 		# Translators: Message to announce it is working...
 		ui.message(_("Wait please..."))
-		ListOfWords()
 		gui.mainFrame._popupSettingsDialog(WordListDialog)
 
 

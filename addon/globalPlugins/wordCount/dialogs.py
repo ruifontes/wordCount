@@ -8,6 +8,8 @@
 # import the necessary modules.
 from .configPanel import *
 from .vars import *
+from keyboardHandler import KeyboardInputGesture
+from time import sleep
 
 # To start the translation process
 addonHandler.initTranslation()
@@ -20,8 +22,9 @@ class WordListDialog(wx.Dialog):
 		wx.Dialog.__init__(self, *args, **kwds)
 		# Translators: Title of the dialog showing the list of words
 		self.SetTitle(_("Words and its occurrences"))
-		loadWords()
-		from .vars import wdsList
+		wordList, text1= ListOfWords()
+		global wdsList, wdsSortedList
+		wdsList, wdsSortedList = loadWords(wordList)
 
 		sizer_1 = wx.BoxSizer(wx.VERTICAL)
 
@@ -35,7 +38,10 @@ class WordListDialog(wx.Dialog):
 		sizer_1.Add(self.button_0, 0, 0, 0)
 		self.button_0.Hide()
 
-		self.list_box_1 = wx.ListBox(self, wx.ID_ANY, choices= wdsList, style=wx.LB_SINGLE)
+		if self.radio_box_1.GetSelection() == 0:
+			self.list_box_1 = wx.ListBox(self, wx.ID_ANY, choices= wdsList, style=wx.LB_SINGLE)
+		else:
+			self.list_box_1 = wx.ListBox(self, wx.ID_ANY, choices= wdsSortedList, style=wx.LB_SINGLE)
 		self.list_box_1.SetMinSize((800, 500))
 		self.list_box_1.SetFocus()
 		self.list_box_1.SetSelection(0)
@@ -71,22 +77,26 @@ class WordListDialog(wx.Dialog):
 		self.button_0.Show()
 
 	def reload1(self, event):
-		self.Destroy()
-		gui.mainFrame._popupSettingsDialog(WordListDialog)
+		self.Hide()
+		if self.radio_box_1.GetSelection() == 0:
+			self.list_box_1.Set(wdsList)
+		else:
+			self.list_box_1.Set(wdsSortedList)
+		self.button_0.Hide()
+		self.list_box_1.SetFocus()
+		self.Show()
 
 	def onOkButton(self, event):
-		from .vars import wdsList
 		index = self.list_box_1.GetSelection()
 		global ourWord
-		ourWord = str(wdsList[index])
+		if self.radio_box_1.GetSelection() == 0:
+			ourWord = str(wdsList[index])
+		else:
+			ourWord = str(wdsSortedList[index])
 		x = ourWord.index(",")
 		ourWord = ourWord[:x]
 		self.Destroy()
 		gui.mainFrame._popupSettingsDialog(showOccursDialog)
-		return ourWord
-
-	def Destroy(self):
-		super(WordListDialog, self).Destroy()
 
 
 class showOccursDialog(wx.Dialog):
@@ -95,8 +105,7 @@ class showOccursDialog(wx.Dialog):
 		wx.Dialog.__init__(self, *args, **kwds)
 		# Translators: Name of dialog showing the list of lines containing the selected word
 		self.SetTitle(_("Lines containing our word"))
-		loadLines()
-		from .vars import lns1
+		lns1 = loadLines(ourWord)
 
 		sizer_1 = wx.BoxSizer(wx.VERTICAL)
 
@@ -109,7 +118,7 @@ class showOccursDialog(wx.Dialog):
 		sizer_1.Add(sizer_2, 0, wx.ALIGN_RIGHT | wx.ALL, 4)
 
 		# Translators: Name of button to show the list of lines containing the selected word
-		self.button_1 = wx.Button(self, wx.ID_ANY, _("&Go to occurrence"))
+		self.button_1 = wx.Button(self, wx.ID_ANY, _("&Go to line"))
 		self.button_1.SetDefault()
 		sizer_2.Add(self.button_1, 0, 0, 0)
 
@@ -128,12 +137,34 @@ class showOccursDialog(wx.Dialog):
 		self.CentreOnScreen()
 
 	def goToText(self, evt):
-		from .vars import lns
+		self.Destroy()
+		# Place cursor at the begin
+		KeyboardInputGesture.fromName("Control+home").send()
+		# Object representing the text
+		info = createInfo1()
+		# Lets calculate where is the text where we want to place the cursor
 		index = self.wordsListBox.GetSelection()
 		ourLine = self.wordsListBox.GetString(index)
-		linesToMove = lns.index(ourLine)
-		print(ourLine, str(linesToMove))
-		info = createInfo()
-		info.move(textInfos.UNIT_LINE, linesToMove)
-		
-
+		# Initial value
+		charsToMove = -1
+		# Where to start searching the expression
+		idx = 0
+		if index > 0:
+			# We have more than one line, so lets verify all since two or more can be equal...
+			x = 0
+			while x <= index:
+				# We start searching at idx position, initially 0
+				found = info.text[idx:].find(ourLine)
+				foundIndex = found + idx
+				if found < 0:
+					break
+				if foundIndex >= 0:
+					charsToMove = foundIndex
+				# Next search will begin here...
+				idx = foundIndex+1
+				x+= 1
+		else:
+			charsToMove = info.text.find(ourLine)
+		print(str(charsToMove))
+		info.move(textInfos.UNIT_CHARACTER, charsToMove)
+		info.updateCaret()

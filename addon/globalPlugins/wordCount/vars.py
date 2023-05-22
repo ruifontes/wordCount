@@ -10,130 +10,83 @@ from .configPanel import *
 import api
 import ui
 import textInfos
-from textInfos import offsets
 import collections
 import string
 
 # To start the translation process
 addonHandler.initTranslation()
 
-obj1 = None
-text = ""
+obj = None
+#text = ""
 text1 = ""
-text2 = ""
-wordList = []
-wdsList = []
-wdsList1 = []
-lns = []
-lns1 = []
 ourWord = ""
 optionsList = [_("Alphabetically"), _("By number of occurences")]
 
-def countWords():
-	global obj1
-	obj1 = api.getFocusObject()
-	obj = api.getFocusObject()
-	treeInterceptor = obj.treeInterceptor
-	if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
-		obj = treeInterceptor
-	try:
-		global info
-		info = obj.makeTextInfo(textInfos.POSITION_SELECTION)
-	except (RuntimeError, NotImplementedError):
-		info = None
-	if not info or info.isCollapsed:
-		# Translators: Message to announce when no text is selected
-		ui.message(_("select some text first."))
-	else:
-		# Prepare to count words
-		global text1, text2
-		text2 = str(text1).lower()
-		text1 = info.text
-		# A dictionary to replace symbols and punctuation by a space to allow a better spliting of words...
-		toRemove = string.punctuation.replace("\'", "").replace("-", "").replace("@", "").replace(" ", "")+"“"+"”"+"—"+"…"
-		for z in range(len(toRemove)):
-			X = toRemove[z]
-			text2 = text2.translate(str.maketrans(X, " "))
-	return info
-
-def ListOfWords():
+def createInfo(pos):
+	global obj
 	obj = api.getFocusObject()
 	treeInterceptor = obj.treeInterceptor
 	if hasattr (treeInterceptor, 'TextInfo') and not treeInterceptor.passThrough:
 		obj = treeInterceptor
 	try:
-		info = obj.makeTextInfo (textInfos.POSITION_ALL)
+		if pos == "sel":
+			info = obj.makeTextInfo (textInfos.POSITION_SELECTION)
+		else:
+			info = obj.makeTextInfo (textInfos.POSITION_ALL)
 	except (RuntimeError, NotImplementedError):
 		info = None
 	if not info or info.isCollapsed:
-		ui.message (_("Error"))
-	else:
-		global text1
-		text1 = info.text
-		text2 = str(text1).lower()
-		# A dictionary to replace symbols and punctuation by a space to allow a better spliting of words...
-		toRemove = {
-			'!' : ' ',
-			'"' : ' ',
-			'#' : ' ',
-			'$' : ' ',
-			'%' : ' ',
-			'(' : ' ',
-			')' : ' ',
-			'*' : ' ',
-			'+' : ' ',
-			',' : ' ',
-			'.' : ' ',
-			'/' : ' ',
-			':' : ' ',
-			';' : ' ',
-			'<' : ' ',
-			'=' : ' ',
-			'>' : ' ',
-			'?' : ' ',
-			'[' : ' ',
-			'\\' : ' ',
-			']' : ' ',
-			'^' : ' ',
-			'_' : ' ',
-			'`' : ' ',
-			'{' : ' ',
-			'|' : ' ',
-			'}' : ' ',
-			'~' : ' ',
-			'“' : ' ',
-			'”' : ' ',
-			'—' : ' ',
-			'…' : ' ',
-		}
-		text2 = text2.translate(str.maketrans(toRemove))
-		words = text2.split()
-		words = sorted(words)
-	global wordList
-	wordList = collections.Counter([word for word in words if word not in ("-", "\'")]).most_common()
-	return text1, wordList
+		# Translators: Message to announce when no text is selected
+		ui.message(_("select some text first."))
+	return info
 
-def loadWords():
+def createInfo1():
+	info = obj.makeTextInfo(textInfos.POSITION_ALL)
+	return info
+
+def cleanPunctuation(text2):
+	# Replace symbols and punctuation by a space to allow a better spliting of words...
+	toRemove = string.punctuation.replace("\'", "").replace("-", "").replace("@", "").replace(" ", "")+"“"+"”"+"—"+"…"
+	for z in range(len(toRemove)):
+		X = toRemove[z]
+		text2 = text2.translate(str.maketrans(X, " "))
+
+def countWords():
+	info = createInfo("sel")
+	# Prepare to count words
+	text1 = info.text
+	text2 = str(text1).lower()
+	cleanPunctuation(text2)
+	return info, text2
+
+def ListOfWords():
+	info = createInfo("all")
+	global text1
+	text1 = info.text
+	text2 = str(text1).lower()
+	cleanPunctuation(text2)
+	words = text2.split()
+	words = sorted(words)
+	wordList = collections.Counter([word for word in words if word not in ("-", "\'")]).most_common()
+	return wordList, text1
+
+def loadWords(wordList):
 	# Load the word list.
-	global wdsList
-	wdsList = []
+	global wdsList, wds1List
+	wdsSortedList = []
 	for word, count in wordList:
 		if word[0].isalpha():
-			wdsList.append('{word}, {count}'.format(word=word, count=count))
+			wdsSortedList.append('{word}, {count}'.format(word=word, count=count))
 		else:
 			pass
-	if config.conf["wordCount"]["order"] == 0:
-		wdsList = sorted(wdsList)
-	else:
-		pass
+	wdsList = sorted(wdsSortedList)
 	if len(wordList) is 0:
 		wdsList.append(_("There are no words"))
-	return wdsList
+		wdsSortedList.append(_("There are no words"))
+	return wdsList, wdsSortedList
 
-def loadLines():
+def loadLines(ourWord):
 	# Load the lines with our word.
-	global lns, lns1
-	from .dialogs import ourWord
 	lns = text1.splitlines()
 	lns1 = []
 	lns2 = []
@@ -141,13 +94,11 @@ def loadLines():
 		if ourWord in line.lower():
 			# Get all lines containing our word
 			lns2.append((line, lns.index(line)))
-			print(str(lns2))
 	for line in lns2:
 		# Divide line in 3 parts: 0=before ourWord, 1=ourWord and 2=after ourWord
 		wordCheck = line[0].lower().partition(ourWord)
 		if " "+ourWord +" " in line[0].lower():
 			lns1.append((line[0], line[1]))
-			print(str(lns1))
 		# Check if the line starts with ourWord
 		elif line[0].lower().startswith(ourWord) is True:
 			# Check if 2 starts with a letter. If so, the line contains ourWord, but making part of other and not as a sepparate word...
@@ -171,9 +122,3 @@ def loadLines():
 			else:
 				lns1.append((line[0], line[1]))
 	return lns1
-
-def createInfo():
-	global obj1
-	info = obj1.makeTextInfo(textInfos.POSITION_ALL)
-	return info
-

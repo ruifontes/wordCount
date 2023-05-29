@@ -17,7 +17,6 @@ import string
 addonHandler.initTranslation()
 
 obj = None
-#text = ""
 text1 = ""
 ourWord = ""
 optionsList = [_("Alphabetically"), _("By number of occurences")]
@@ -38,25 +37,28 @@ def createInfo(pos):
 	if not info or info.isCollapsed:
 		# Translators: Message to announce when no text is selected
 		ui.message(_("select some text first."))
+		info = None
 	return info
 
 def createInfo1():
 	info = obj.makeTextInfo(textInfos.POSITION_ALL)
 	return info
 
-def cleanPunctuation(text2):
 	# Replace symbols and punctuation by a space to allow a better spliting of words...
+def cleanPunctuation(text2):
 	toRemove = string.punctuation.replace("\'", "").replace("-", "").replace("@", "").replace(" ", "")+"“"+"”"+"—"+"…"
 	for z in range(len(toRemove)):
 		X = toRemove[z]
 		text2 = text2.translate(str.maketrans(X, " "))
+	return text2
 
 def countWords():
 	info = createInfo("sel")
 	# Prepare to count words
 	text1 = info.text
 	text2 = str(text1).lower()
-	cleanPunctuation(text2)
+	text2 = cleanPunctuation(text2)
+	print(text2)
 	return info, text2
 
 def ListOfWords():
@@ -64,7 +66,7 @@ def ListOfWords():
 	global text1
 	text1 = info.text
 	text2 = str(text1).lower()
-	cleanPunctuation(text2)
+	text2 = cleanPunctuation(text2)
 	words = text2.split()
 	words = sorted(words)
 	wordList = collections.Counter([word for word in words if word not in ("-", "\'")]).most_common()
@@ -72,7 +74,7 @@ def ListOfWords():
 
 def loadWords(wordList):
 	# Load the word list.
-	global wdsList, wds1List
+	global wdsList, wdsSortedList
 	wdsSortedList = []
 	for word, count in wordList:
 		if word[0].isalpha():
@@ -101,17 +103,13 @@ def loadLines(ourWord):
 			lns1.append((line[0], line[1]))
 		# Check if the line starts with ourWord
 		elif line[0].lower().startswith(ourWord) is True:
-			# Check if 2 starts with a letter. If so, the line contains ourWord, but making part of other and not as a sepparate word...
-			if wordCheck[2][0].isalpha() is True:
-				pass
-			else:
+			# Check if 2 starts with a letter. If so, the line contains ourWord, but making part of other and not as a sepparate word... So we want it if not.
+			if wordCheck[2][0].isalpha() is False:
 				lns1.append((line[0], line[1]))
 		# Check if line ends with ourWord
 		elif line[0].lower().endswith(ourWord) is True:
-			# Check if last character of 0 is a letter. If so, ourWord is not present as a word...
-			if wordCheck[0][-1].isalpha() is True:
-				pass
-			else:
+			# Check if last character of 0 is a letter. If so, ourWord is not present as a word... So, we want it if not.
+			if wordCheck[0][-1].isalpha() is False:
 				lns1.append((line[0], line[1]))
 		# OurWord is in the middle of the line, so check is it is a word or part of a word...
 		else:

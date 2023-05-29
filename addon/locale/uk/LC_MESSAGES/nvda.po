@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wordCount 1.4\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2023-03-07 20:35+0200\n"
-"PO-Revision-Date: 2023-03-07 20:45+0200\n"
+"POT-Creation-Date: 2023-05-22 15:30+0100\n"
+"PO-Revision-Date: 2023-05-29 14:15+0100\n"
 "Last-Translator: Volodymyr Pyrih <vp88.mobile@gmail.com>\n"
 "Language-Team: Ukrainian NVDA Community\n"
 "Language: uk\n"
@@ -17,122 +17,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.1\n"
 "X-Poedit-Basepath: C:/Users/admin\n"
 "X-Poedit-SearchPath-0: AppData/Roaming/nvda/addons/wordCount/globalPlugins/"
 "word-count.py\n"
 "X-Poedit-SearchPath-1: Documents/GitHub/wordCount/buildVars.py\n"
 
 #. Translators: Message to be announced during Keyboard Help
-#: addon\globalPlugins\wordCount\__init__.py:40
+#: addon\globalPlugins\wordCount\__init__.py:35
 msgid "Announces the number of elements in the selected text."
 msgstr "Промовляє кількість елементів у виділеному тексті."
 
 #. Translators: Name of the section in "Input gestures" dialog.
-#: addon\globalPlugins\wordCount\__init__.py:42
-#: addon\globalPlugins\wordCount\__init__.py:83
+#: addon\globalPlugins\wordCount\__init__.py:37
+#: addon\globalPlugins\wordCount\__init__.py:60
 msgid "Text editing"
 msgstr "Редагування тексту"
 
 #. Translators: Message to announce the number of words and characters
-#: addon\globalPlugins\wordCount\__init__.py:60
+#: addon\globalPlugins\wordCount\__init__.py:50
 #, python-brace-format
-msgid "{arg0} words and {arg1} characters in {arg2} paragraphs"
-msgstr "{arg0} слів і {arg1} символів у {arg2} абзацах"
-
-#. Translators: Message to announce the number of words, characters, paragraphs and lines
-#: addon\globalPlugins\wordCount\__init__.py:73
-#, python-brace-format
-msgid ""
-"{arg0} words and {arg1} characters in {arg2} paragraphs and {arg3} lines"
-msgstr "{arg0} слів і {arg1} символів у {arg2} абзацах і {arg3} рядках"
+msgid "{words} words and {characters} characters in {paragraphs} paragraphs"
+msgstr "{words} слів та {characters} символів у {paragraphs} абзацах"
 
 #. Translators: Message to be announced during Keyboard Help
-#: addon\globalPlugins\wordCount\__init__.py:81
+#: addon\globalPlugins\wordCount\__init__.py:58
 msgid "Opens a dialog with the list of words found in the document."
 msgstr "Відкриває діалог зі списком слів, знайдених у документі."
 
 #. Translators: Message to announce it is working...
-#: addon\globalPlugins\wordCount\__init__.py:87
+#: addon\globalPlugins\wordCount\__init__.py:64
 msgid "Wait please..."
 msgstr "Зачекайте, будь ласка..."
 
-#: addon\globalPlugins\wordCount\configPanel.py:13
-#: addon\globalPlugins\wordCount\dialogs.py:28
-#: addon\globalPlugins\wordCount\variables.py:26
+#. Constants:
+#: addon\globalPlugins\wordCount\configPanel.py:28
+#: addon\globalPlugins\wordCount\dialogs.py:32
+#: addon\globalPlugins\wordCount\vars.py:22
 msgid "Alphabetically"
 msgstr "За абеткою"
 
-#: addon\globalPlugins\wordCount\configPanel.py:13
-#: addon\globalPlugins\wordCount\dialogs.py:28
-#: addon\globalPlugins\wordCount\variables.py:26
+#: addon\globalPlugins\wordCount\configPanel.py:28
+#: addon\globalPlugins\wordCount\dialogs.py:32
+#: addon\globalPlugins\wordCount\vars.py:22
 msgid "By number of occurences"
 msgstr "За кількістю випадків"
 
+#. Translators: Title of the wordCount settings dialog in the NVDA settings.
+#: addon\globalPlugins\wordCount\configPanel.py:33
+msgid "Wordcount"
+msgstr ""
+
 #. Translators: Label of a  combobox used to choose the sort order
-#: addon\globalPlugins\wordCount\configPanel.py:24
+#: addon\globalPlugins\wordCount\configPanel.py:39
 msgid "&Order by:"
 msgstr "&Сортувати:"
 
-#. Translators: Checkbox name in the configuration dialog
-#: addon\globalPlugins\wordCount\configPanel.py:34
-msgid "Check for updates at startup"
-msgstr "Перевіряти оновлення під час запуску"
-
 #. Translators: Title of the dialog showing the list of words
-#: addon\globalPlugins\wordCount\dialogs.py:21
+#: addon\globalPlugins\wordCount\dialogs.py:24
 msgid "Words and its occurrences"
 msgstr "Слова і випадки їх використання"
 
 #. Translators: Ordering options
-#: addon\globalPlugins\wordCount\dialogs.py:28
+#: addon\globalPlugins\wordCount\dialogs.py:32
 msgid "Order by:"
 msgstr "Сортувати:"
 
 #. Translators: Button to reorder the list
-#: addon\globalPlugins\wordCount\dialogs.py:33
+#: addon\globalPlugins\wordCount\dialogs.py:37
 msgid "&Reorder"
 msgstr "&Пересортувати"
 
 #. Translators: Name of button to show the list of lines containing the selected word
-#: addon\globalPlugins\wordCount\dialogs.py:47
+#: addon\globalPlugins\wordCount\dialogs.py:54
 msgid "&Show occurrences"
 msgstr "&Показати випадки"
 
 #. Translators: Name of dialog showing the list of lines containing the selected word
-#: addon\globalPlugins\wordCount\dialogs.py:96
+#: addon\globalPlugins\wordCount\dialogs.py:107
 msgid "Lines containing our word"
 msgstr "Рядки, що містять наше слово"
 
-#. Translators: Message dialog box to ask user if wants to update.
-#: addon\globalPlugins\wordCount\update.py:82
-msgid ""
-"It is available a new version of this add-on.\n"
-" Do you want to update?"
-msgstr ""
-"Доступна нова версія цього додатка\n"
-" Хочете оновити?"
-
-#. Translators: Message dialog box to inform user that the add-on is not compatible
-#: addon\globalPlugins\wordCount\update.py:117
-msgid ""
-"This new version of this add-on is not compatible with your version of "
-"NVDA.\n"
-" The update process will be terminated."
-msgstr ""
-"Нова версія цього додатка несумісна з вашою версією NVDA.\n"
-" Процес оновлення буде перервано."
+#. Translators: Name of button to show the list of lines containing the selected word
+#: addon\globalPlugins\wordCount\dialogs.py:121
+msgid "&Go to line"
+msgstr "&Перейдіть до рядка"
 
 #. Translators: Message to announce when no text is selected
-#: addon\globalPlugins\wordCount\variables.py:43
+#: addon\globalPlugins\wordCount\vars.py:39
 msgid "select some text first."
 msgstr "спершу виділіть якийсь текст."
 
-#: addon\globalPlugins\wordCount\variables.py:65
-msgid "Error"
-msgstr "Помилка"
-
-#: addon\globalPlugins\wordCount\variables.py:126
+#: addon\globalPlugins\wordCount\vars.py:86
+#: addon\globalPlugins\wordCount\vars.py:87
 msgid "There are no words"
 msgstr "Немає слів"
 
@@ -147,17 +124,43 @@ msgstr "Підрахунок елементів у виділеному текс
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 #: buildVars.py:26
 msgid ""
-"announces the number of words, characters, paragraphs and lines of the "
-"selected text when you select some text and press Control+Shift+F12.\n"
+"announces the number of words, characters and paragraphs of the selected "
+"text pressing Control+Shift+F12.\n"
 "\tIt also can create a list of the words used, ordered by number of "
-"occcurrences or alphabetically, and allow to display the lines containing a "
-"word pressing Control+Shift+F11."
+"occcurrences or alphabetically, display the lines containing a word and "
+"finally move to a specific line, pressing Control+Shift+F11."
 msgstr ""
-"Промовляє кількість слів, символів, абзаців і рядків у виділеному тексті, "
-"коли ви виділите якийсь текст і натиснете Control+Shift+F12.\n"
-"\tВін також може створити список використаних слів, відсортованих за "
-"кількістю випадків або за абеткою, і дозволяє показати рядки, які містять "
-"слово, після натискання Control+Shift+F11."
+"оголошує кількість слів, символів і абзаців у виділеному тексті, якщо "
+"натиснути комбінацію клавіш Control+Shift+F12.\n"
+"\tВін також може створити список використаних слів, впорядкований за "
+"кількістю входжень або за алфавітом, показати рядки, що містять слово, і, "
+"нарешті, перейти до конкретного рядка, натиснувши Control+Shift+F11."
+
+#, python-brace-format
+#~ msgid ""
+#~ "{arg0} words and {arg1} characters in {arg2} paragraphs and {arg3} lines"
+#~ msgstr "{arg0} слів і {arg1} символів у {arg2} абзацах і {arg3} рядках"
+
+#~ msgid "Check for updates at startup"
+#~ msgstr "Перевіряти оновлення під час запуску"
+
+#~ msgid ""
+#~ "It is available a new version of this add-on.\n"
+#~ " Do you want to update?"
+#~ msgstr ""
+#~ "Доступна нова версія цього додатка\n"
+#~ " Хочете оновити?"
+
+#~ msgid ""
+#~ "This new version of this add-on is not compatible with your version of "
+#~ "NVDA.\n"
+#~ " The update process will be terminated."
+#~ msgstr ""
+#~ "Нова версія цього додатка несумісна з вашою версією NVDA.\n"
+#~ " Процес оновлення буде перервано."
+
+#~ msgid "Error"
+#~ msgstr "Помилка"
 
 #~ msgid "Word list"
 #~ msgstr "Список слів"

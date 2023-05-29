@@ -47,10 +47,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			# Counting paragraphs.
 			paragraphcount = info.text.count(end_of_paragraph)
 			# Translators: Message to announce the number of words and characters
-			ui.message(_("{arg0} words and {arg1} characters in {arg2} paragraphs").format(
-				arg0 = len(text2.split()),
-				arg1 = len(info.text),
-				arg2 = paragraphcount)
+			ui.message(_("{words} words and {characters} characters in {paragraphs} paragraphs").format(
+				words = len(text2.split()),
+				characters = len(info.text),
+				paragraphs = paragraphcount)
 			)
 
 	@script( 

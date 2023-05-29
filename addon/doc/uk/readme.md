@@ -1,7 +1,7 @@
 # Addon to count elements of selected text (Додаток для підрахунку елементів у виділеному тексті) #
 
 * Автори: Rui Fontes <rui.fontes@tiflotecnia.com>, Angelo Abrantes <ampa4374@gmail.com> і Abel Passos Jr. <abel.passos@gmail.com>
-* Оновлено 11/03/2023
+* Оновлено 22/05/2023
 * Завантажити [стабільну версію][1]
 * Сумісність: NVDA 2019.3 і новіші
 
@@ -16,4 +16,4 @@
 
 Цю команду можна змінити в діалозі «Жести вводу» в розділі «Редагування тексту».
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/2023.03.11/wordCount-2023.03.11.nvda-addon
+[1]: https://github.com/ruifontes/wordCount/releases/download/2023.05.29/wordCount-2023.05.29.nvda-addon

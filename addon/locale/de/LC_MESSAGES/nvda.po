@@ -7,124 +7,105 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wordCount 1.4\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2023-03-07 02:10+0000\n"
-"PO-Revision-Date: 2023-03-07 02:40+0000\n"
+"POT-Creation-Date: 2023-05-22 15:30+0100\n"
+"PO-Revision-Date: 2023-05-29 12:54+0100\n"
 "Last-Translator: René Linke <rene.linke@hamburg.de>\n"
 "Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.1\n"
 
 #. Translators: Message to be announced during Keyboard Help
-#: addon\globalPlugins\wordCount\__init__.py:40
+#: addon\globalPlugins\wordCount\__init__.py:35
 msgid "Announces the number of elements in the selected text."
 msgstr "Gibt die Anzahl der Elemente im ausgewählten Text an."
 
 #. Translators: Name of the section in "Input gestures" dialog.
-#: addon\globalPlugins\wordCount\__init__.py:42
-#: addon\globalPlugins\wordCount\__init__.py:83
+#: addon\globalPlugins\wordCount\__init__.py:37
+#: addon\globalPlugins\wordCount\__init__.py:60
 msgid "Text editing"
 msgstr "Textbearbeitung"
 
 #. Translators: Message to announce the number of words and characters
-#: addon\globalPlugins\wordCount\__init__.py:60
+#: addon\globalPlugins\wordCount\__init__.py:50
 #, fuzzy, python-brace-format
 #| msgid ""
 #| "{arg0} words and {arg1} characters in {arg2} paragraphs and {arg3} lines"
-msgid "{arg0} words and {arg1} characters in {arg2} paragraphs"
-msgstr "{arg0} Wörter und {arg1} Zeichen in {arg2} Absätze und {arg3} Zeilen"
-
-#. Translators: Message to announce the number of words, characters, paragraphs and lines
-#: addon\globalPlugins\wordCount\__init__.py:73
-#, python-brace-format
-msgid ""
-"{arg0} words and {arg1} characters in {arg2} paragraphs and {arg3} lines"
+msgid "{words} words and {characters} characters in {paragraphs} paragraphs"
 msgstr "{arg0} Wörter und {arg1} Zeichen in {arg2} Absätze und {arg3} Zeilen"
 
 #. Translators: Message to be announced during Keyboard Help
-#: addon\globalPlugins\wordCount\__init__.py:81
+#: addon\globalPlugins\wordCount\__init__.py:58
 msgid "Opens a dialog with the list of words found in the document."
 msgstr ""
 
 #. Translators: Message to announce it is working...
-#: addon\globalPlugins\wordCount\__init__.py:87
+#: addon\globalPlugins\wordCount\__init__.py:64
 msgid "Wait please..."
 msgstr ""
 
-#: addon\globalPlugins\wordCount\configPanel.py:13
-#: addon\globalPlugins\wordCount\dialogs.py:28
-#: addon\globalPlugins\wordCount\variables.py:26
+#. Constants:
+#: addon\globalPlugins\wordCount\configPanel.py:28
+#: addon\globalPlugins\wordCount\dialogs.py:32
+#: addon\globalPlugins\wordCount\vars.py:22
 msgid "Alphabetically"
 msgstr ""
 
-#: addon\globalPlugins\wordCount\configPanel.py:13
-#: addon\globalPlugins\wordCount\dialogs.py:28
-#: addon\globalPlugins\wordCount\variables.py:26
+#: addon\globalPlugins\wordCount\configPanel.py:28
+#: addon\globalPlugins\wordCount\dialogs.py:32
+#: addon\globalPlugins\wordCount\vars.py:22
 msgid "By number of occurences"
 msgstr ""
 
+#. Translators: Title of the wordCount settings dialog in the NVDA settings.
+#: addon\globalPlugins\wordCount\configPanel.py:33
+msgid "Wordcount"
+msgstr ""
+
 #. Translators: Label of a  combobox used to choose the sort order
-#: addon\globalPlugins\wordCount\configPanel.py:24
+#: addon\globalPlugins\wordCount\configPanel.py:39
 msgid "&Order by:"
 msgstr ""
 
-#. Translators: Checkbox name in the configuration dialog
-#: addon\globalPlugins\wordCount\configPanel.py:34
-msgid "Check for updates at startup"
-msgstr ""
-
 #. Translators: Title of the dialog showing the list of words
-#: addon\globalPlugins\wordCount\dialogs.py:21
+#: addon\globalPlugins\wordCount\dialogs.py:24
 msgid "Words and its occurrences"
 msgstr ""
 
 #. Translators: Ordering options
-#: addon\globalPlugins\wordCount\dialogs.py:28
+#: addon\globalPlugins\wordCount\dialogs.py:32
 msgid "Order by:"
 msgstr ""
 
 #. Translators: Button to reorder the list
-#: addon\globalPlugins\wordCount\dialogs.py:33
+#: addon\globalPlugins\wordCount\dialogs.py:37
 msgid "&Reorder"
 msgstr ""
 
 #. Translators: Name of button to show the list of lines containing the selected word
-#: addon\globalPlugins\wordCount\dialogs.py:47
+#: addon\globalPlugins\wordCount\dialogs.py:54
 msgid "&Show occurrences"
 msgstr ""
 
 #. Translators: Name of dialog showing the list of lines containing the selected word
-#: addon\globalPlugins\wordCount\dialogs.py:96
+#: addon\globalPlugins\wordCount\dialogs.py:107
 msgid "Lines containing our word"
 msgstr ""
 
-#. Translators: Message dialog box to ask user if wants to update.
-#: addon\globalPlugins\wordCount\update.py:82
-msgid ""
-"It is available a new version of this add-on.\n"
-" Do you want to update?"
-msgstr ""
-
-#. Translators: Message dialog box to inform user that the add-on is not compatible
-#: addon\globalPlugins\wordCount\update.py:117
-msgid ""
-"This new version of this add-on is not compatible with your version of "
-"NVDA.\n"
-" The update process will be terminated."
+#. Translators: Name of button to show the list of lines containing the selected word
+#: addon\globalPlugins\wordCount\dialogs.py:121
+msgid "&Go to line"
 msgstr ""
 
 #. Translators: Message to announce when no text is selected
-#: addon\globalPlugins\wordCount\variables.py:43
+#: addon\globalPlugins\wordCount\vars.py:39
 msgid "select some text first."
 msgstr "Wählen Sie zuerst einen Text aus."
 
-#: addon\globalPlugins\wordCount\variables.py:65
-msgid "Error"
-msgstr ""
-
-#: addon\globalPlugins\wordCount\variables.py:126
+#: addon\globalPlugins\wordCount\vars.py:86
+#: addon\globalPlugins\wordCount\vars.py:87
 msgid "There are no words"
 msgstr ""
 
@@ -145,16 +126,22 @@ msgstr "Zählt die Elemente des ausgewählten Textes."
 #| "some aplications, like Word, WordPad and DSpeech, it only announces word "
 #| "and characters, to avoid hanging NVDA."
 msgid ""
-"announces the number of words, characters, paragraphs and lines of the "
-"selected text when you select some text and press Control+Shift+F12.\n"
+"announces the number of words, characters and paragraphs of the selected "
+"text pressing Control+Shift+F12.\n"
 "\tIt also can create a list of the words used, ordered by number of "
-"occcurrences or alphabetically, and allow to display the lines containing a "
-"word pressing Control+Shift+F11."
+"occcurrences or alphabetically, display the lines containing a word and "
+"finally move to a specific line, pressing Control+Shift+F11."
 msgstr ""
 "Gibt die Anzahl der Wörter, Zeichen, Absätze und Zeilen des ausgewählten "
 "Textes an, wenn Sie einen Text auswählen und Strg+Umschalt+F12 drücken. In "
 "einigen Anwendungen, wie Microsoft Word, WordPad und DSpeech, werden nur "
 "Wörter und Zeichen angesagt, um zu vermeiden, dass NVDA hängt."
+
+#, python-brace-format
+#~ msgid ""
+#~ "{arg0} words and {arg1} characters in {arg2} paragraphs and {arg3} lines"
+#~ msgstr ""
+#~ "{arg0} Wörter und {arg1} Zeichen in {arg2} Absätze und {arg3} Zeilen"
 
 #, python-brace-format
 #~ msgid "{arg0} words and {arg1} characters"

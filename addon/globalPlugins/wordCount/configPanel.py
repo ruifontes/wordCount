@@ -28,7 +28,7 @@ initConfiguration()
 optionsList = [_("Alphabetically"), _("By number of occurences")]
 
 
-class wordCountSettingsPanel(gui.SettingsPanel):
+class wordCountSettingsPanel(gui.settingsDialogs.SettingsPanel):
 	# Translators: Title of the wordCount settings dialog in the NVDA settings.
 	title = _("Wordcount")
 

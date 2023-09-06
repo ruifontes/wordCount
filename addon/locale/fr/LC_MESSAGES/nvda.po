@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordCount\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2023-05-22 15:30+0100\n"
-"PO-Revision-Date: 2023-05-29 14:05+0100\n"
+"POT-Creation-Date: 2023-09-06 01:04+0100\n"
+"PO-Revision-Date: 2023-09-06 01:30+0100\n"
 "Last-Translator: José Manuel Delicado <jmdaweb@hotmail.com>\n"
 "Language-Team: Equipa portuguesa do NVDA: Ângelo Abrantes <ampa4374@gmail."
 "com> e Rui Fontes <rui.fontes@tiflotecnia.com>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.3.2\n"
 "X-Poedit-Basepath: ../../../globalPlugins\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -82,18 +82,36 @@ msgstr "Ordonner pour:"
 msgid "&Reorder"
 msgstr "&Re-ordonner"
 
+#. Translators: Static text to filter the results
+#: addon\globalPlugins\wordCount\dialogs.py:42
+msgid "Filter:"
+msgstr ""
+
 #. Translators: Name of button to show the list of lines containing the selected word
-#: addon\globalPlugins\wordCount\dialogs.py:54
+#: addon\globalPlugins\wordCount\dialogs.py:61
 msgid "&Show occurrences"
 msgstr "&Mostrar ocorrências"
 
+#: addon\globalPlugins\wordCount\dialogs.py:93
+msgid "No results"
+msgstr ""
+
+#: addon\globalPlugins\wordCount\dialogs.py:96
+msgid "1 result"
+msgstr ""
+
+#: addon\globalPlugins\wordCount\dialogs.py:99
+#, python-format
+msgid "%d results"
+msgstr ""
+
 #. Translators: Name of dialog showing the list of lines containing the selected word
-#: addon\globalPlugins\wordCount\dialogs.py:107
+#: addon\globalPlugins\wordCount\dialogs.py:136
 msgid "Lines containing our word"
 msgstr "Lignes contenant notre mot"
 
 #. Translators: Name of button to show the list of lines containing the selected word
-#: addon\globalPlugins\wordCount\dialogs.py:121
+#: addon\globalPlugins\wordCount\dialogs.py:150
 msgid "&Go to line"
 msgstr "&Aller à la ligne"
 

@@ -22,7 +22,7 @@ class WordListDialog(wx.Dialog):
 		wx.Dialog.__init__(self, *args, **kwds)
 		# Translators: Title of the dialog showing the list of words
 		self.SetTitle(_("Words and its occurrences"))
-		wordList, text1= ListOfWords()
+		wordList, text1 = ListOfWords()
 		global wdsList, wdsSortedList
 		wdsList, wdsSortedList = loadWords(wordList)
 
@@ -37,6 +37,13 @@ class WordListDialog(wx.Dialog):
 		self.button_0 = wx.Button(self, wx.ID_ANY, _("&Reorder"))
 		sizer_1.Add(self.button_0, 0, 0, 0)
 		self.button_0.Hide()
+
+		# Translators: Static text to filter the results
+		label_1 = wx.StaticText(self, wx.ID_ANY, _("Filter:"))
+		sizer_1.Add(label_1, 0, 0, 0)
+
+		self.text_ctrl_1 = wx.TextCtrl(self, wx.ID_ANY )
+		sizer_1.Add(self.text_ctrl_1, 0, 0, 0)
 
 		if self.radio_box_1.GetSelection() == 0:
 			self.list_box_1 = wx.ListBox(self, wx.ID_ANY, choices= wdsList, style=wx.LB_SINGLE)
@@ -66,6 +73,7 @@ class WordListDialog(wx.Dialog):
 		self.SetEscapeId(self.button_CLOSE.GetId())
 		self.Bind(wx.EVT_RADIOBOX, self.reload, self.radio_box_1)
 		self.Bind(wx.EVT_BUTTON, self.reload1, self.button_0)
+		self.Bind(wx.EVT_TEXT, self.onFilter, self.text_ctrl_1)
 		self.Bind(wx.EVT_BUTTON, self.onOkButton, self.button_1)
 
 		self.Layout()
@@ -75,6 +83,20 @@ class WordListDialog(wx.Dialog):
 		event.Skip()
 		config.conf["wordCount"]["order"] = self.radio_box_1.GetSelection()
 		self.button_0.Show()
+
+	def onFilter(self, event):
+		filterText = self.text_ctrl_1.GetValue().lower()
+		global filteredWords
+		filteredWords = [word for word in wdsList if filterText in word.lower()]
+		self.list_box_1.Set(filteredWords)
+		if len(filteredWords) == 0:
+			ui.message(_("No results"))
+		elif len(filteredWords) == 1:
+			self.list_box_1.SetSelection(0)
+			ui.message(_("1 result"))
+		else:
+			self.list_box_1.SetSelection(0)
+			ui.message(_("%d results") % len(filteredWords))
 
 	def reload1(self, event):
 		self.Hide()
@@ -87,16 +109,23 @@ class WordListDialog(wx.Dialog):
 		self.Show()
 
 	def onOkButton(self, event):
-		index = self.list_box_1.GetSelection()
 		global ourWord
-		if self.radio_box_1.GetSelection() == 0:
-			ourWord = str(wdsList[index])
+		index = self.list_box_1.GetSelection()
+		if self.text_ctrl_1.GetValue() != "":
+			ourWord = str(filteredWords[index])
 		else:
-			ourWord = str(wdsSortedList[index])
+			if self.radio_box_1.GetSelection() == 0:
+				ourWord = str(wdsList[index])
+			else:
+				ourWord = str(wdsSortedList[index])
 		x = ourWord.index(",")
 		ourWord = ourWord[:x]
 		self.Destroy()
-		gui.mainFrame._popupSettingsDialog(showOccursDialog)
+		dialog2 = showOccursDialog(gui.mainFrame)
+		if not dialog2.IsShown():
+			gui.mainFrame.prePopup()
+			dialog2.Show()
+			gui.mainFrame.postPopup()
 
 
 class showOccursDialog(wx.Dialog):

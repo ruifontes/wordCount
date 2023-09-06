@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wordCount 1.4\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2023-05-22 15:30+0100\n"
-"PO-Revision-Date: 2023-05-29 14:15+0100\n"
+"POT-Creation-Date: 2023-09-06 01:04+0100\n"
+"PO-Revision-Date: 2023-09-06 01:38+0100\n"
 "Last-Translator: Volodymyr Pyrih <vp88.mobile@gmail.com>\n"
 "Language-Team: Ukrainian NVDA Community\n"
 "Language: uk\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.3.2\n"
 "X-Poedit-Basepath: C:/Users/admin\n"
 "X-Poedit-SearchPath-0: AppData/Roaming/nvda/addons/wordCount/globalPlugins/"
 "word-count.py\n"
@@ -88,18 +88,36 @@ msgstr "Сортувати:"
 msgid "&Reorder"
 msgstr "&Пересортувати"
 
+#. Translators: Static text to filter the results
+#: addon\globalPlugins\wordCount\dialogs.py:42
+msgid "Filter:"
+msgstr ""
+
 #. Translators: Name of button to show the list of lines containing the selected word
-#: addon\globalPlugins\wordCount\dialogs.py:54
+#: addon\globalPlugins\wordCount\dialogs.py:61
 msgid "&Show occurrences"
 msgstr "&Показати випадки"
 
+#: addon\globalPlugins\wordCount\dialogs.py:93
+msgid "No results"
+msgstr ""
+
+#: addon\globalPlugins\wordCount\dialogs.py:96
+msgid "1 result"
+msgstr ""
+
+#: addon\globalPlugins\wordCount\dialogs.py:99
+#, python-format
+msgid "%d results"
+msgstr ""
+
 #. Translators: Name of dialog showing the list of lines containing the selected word
-#: addon\globalPlugins\wordCount\dialogs.py:107
+#: addon\globalPlugins\wordCount\dialogs.py:136
 msgid "Lines containing our word"
 msgstr "Рядки, що містять наше слово"
 
 #. Translators: Name of button to show the list of lines containing the selected word
-#: addon\globalPlugins\wordCount\dialogs.py:121
+#: addon\globalPlugins\wordCount\dialogs.py:150
 msgid "&Go to line"
 msgstr "&Перейдіть до рядка"
 

@@ -1,7 +1,7 @@
 # Sanalaskuri #
 
 * Tekijät: Rui Fontes <rui.fontes@tiflotecnia.com>, Ângelo Abrantes <ampa4374@gmail.com> ja Abel Passos Jr. <abel.passos@gmail.com>
-* Päivitetty 22.5.2023
+* Päivitetty 05.9.2023
 * Lataa [vakaa versio][1]
 * Yhteensopivuus: NVDA 2019.3 ja uudemmat
 
@@ -11,4 +11,5 @@ Valitse haluttu teksti missä tahansa tekstieditorissa tai virtuaaliasiakirjassa
 Saat luettelon käytetyistä sanoista painamalla Ctrl+Vaihto+F11.
 Tätä komentoa on mahdollista muuttaa \"Syöttökomennot\"-valintaikkunan \"Tekstin muokkaus\"-kategoriassa.
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/2023.05.29/wordCount-2023.05.29.nvda-addon
+[1]: https://github.com/ruifontes/wordCount/releases/download/2023.09.06/wordCount-2023.09.06.nvda-addon
+

@@ -62,7 +62,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_Listing(self, gesture):
 		# Translators: Message to announce it is working...
 		ui.message(_("Wait please..."))
-		gui.mainFrame._popupSettingsDialog(WordListDialog)
+		# gui.mainFrame._popupSettingsDialog(WordListDialog)
+		dialog1 = WordListDialog(gui.mainFrame)
+		if not dialog1.IsShown():
+			gui.mainFrame.prePopup()
+			dialog1.Show()
+			gui.mainFrame.postPopup()
 
 
 # Avoid use on secure screens

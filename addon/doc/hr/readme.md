@@ -1,7 +1,7 @@
 # Dodatak za brojenje elemenata u odabranom tekstu #
 
 * Autori: Rui Fontes <rui.fontes@tiflotecnia.com>, Angelo Abrantes <ampa4374@gmail.com> i Abel Passos Jr. <abel.passos@gmail.com>
-* Aktualizirano 22. 05. 2023.
+* Aktualizirano 05. 09. 2023.
 * Preuzmi [stabilnu verziju][1]
 * Kompatibilnost: NVDA verzija 2019.3 i novije verzije
 
@@ -11,4 +11,5 @@ U bilo kojem uređivaču teksta ili virtualnom dokumentu (npr. u web pregledniku
 Za dobivanje popisa korištenih riječi, pritisni Kontrol+Šift+f11.
 Ova se naredba može promijeniti u dijaloškom okviru „Ulazne geste” u odjeljku „Uređivanje teksta”.
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/2023.05.29/wordCount-2023.05.29.nvda-addon
+[1]: https://github.com/ruifontes/wordCount/releases/download/2023.09.06/wordCount-2023.09.06.nvda-addon
+

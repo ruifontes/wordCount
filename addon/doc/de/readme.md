@@ -11,4 +11,4 @@ Markieren Sie in einem beliebigen Texteditor oder in einem virtuellen Dokument, 
 Um eine Liste der verwendeten Wörter zu erhalten, drücken Sie einfach Strg+Umschalt+F11.
 Diese Befehle können im Dialogfeld für die Tastenbefehle im Abschnitt \"Textbearbeitung\" geändert werden.
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/2023.09.06/wordCount-2023.09.06.nvda-addon
+[1]: https://github.com/ruifontes/wordCount/releases/download/2023.09.25/wordCount-2023.09.25.nvda-addon

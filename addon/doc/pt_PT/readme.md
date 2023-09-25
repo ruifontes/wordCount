@@ -21,5 +21,4 @@ Nota: Em algumas aplicações, como o WordPad, NotPad3 e possivelmente outras, n
 
 Estes comandos podem ser modificados no diálogo "Definir comandos" na categoria "Edição de texto".
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/2023.09.06/wordCount-2023.09.06.nvda-addon
-
+[1]: https://github.com/ruifontes/wordCount/releases/download/2023.09.25/wordCount-2023.09.25.nvda-addon

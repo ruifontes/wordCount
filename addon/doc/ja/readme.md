@@ -10,5 +10,4 @@
 使用されている単語のリストを取得するには、Control+Shift+f11を押します。
 このコマンドは、「入力ジェスチャ」ダイアログの「テキスト編集」セクションで変更出来ます。
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/2023.09.06/wordCount-2023.09.06.nvda-addon
-
+[1]: https://github.com/ruifontes/wordCount/releases/download/2023.09.25/wordCount-2023.09.25.nvda-addon

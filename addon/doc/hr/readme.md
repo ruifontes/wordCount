@@ -11,5 +11,4 @@ U bilo kojem uređivaču teksta ili virtualnom dokumentu (npr. u web pregledniku
 Za dobivanje popisa korištenih riječi, pritisni Kontrol+Šift+f11.
 Ova se naredba može promijeniti u dijaloškom okviru „Ulazne geste” u odjeljku „Uređivanje teksta”.
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/2023.09.06/wordCount-2023.09.06.nvda-addon
-
+[1]: https://github.com/ruifontes/wordCount/releases/download/2023.09.25/wordCount-2023.09.25.nvda-addon

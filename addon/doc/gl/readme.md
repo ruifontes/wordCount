@@ -12,5 +12,4 @@ En calquera editor de texto, ou nun documento virtual, por exemplo nun navegador
 Para obter unha lista de palabras utilizadas, simplemente preme Control+Shift+f11.
 Estas ordes pódense modificar no diálogo \"Xestos de entrada\" na sección \"Revisión de texto\".
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/2023.09.06/wordCount-2023.09.06.nvda-addon
-
+[1]: https://github.com/ruifontes/wordCount/releases/download/2023.09.25/wordCount-2023.09.25.nvda-addon

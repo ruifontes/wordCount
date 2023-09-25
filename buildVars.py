@@ -26,7 +26,7 @@ addon_info = {
 	"addon_description": _("""announces the number of words, characters and paragraphs of the selected text pressing Control+Shift+F12.
 	It also can create a list of the words used, ordered by number of occcurrences or alphabetically, display the lines containing a word and finally move to a specific line, pressing Control+Shift+F11."""),
 	# version
-	"addon_version": "2023.09.06",
+	"addon_version": "2023.09.25",
 	# Author(s)
 	"addon_author": "Rui Fontes <rui.fontes@tiflotecnia.com>, Ângelo Abrantes <ampa4374@gmail.com> and Abel Passos Jr. <abel.passos@gmail.com>",
 	# URL for the add-on documentation support
@@ -38,7 +38,7 @@ addon_info = {
 	# Minimum NVDA version supported (e.g. "2018.3.0", minor version is optional)
 	"addon_minimumNVDAVersion": "2019.3",
 	# Last NVDA version supported/tested (e.g. "2018.4.0", ideally more recent than minimum version)
-	"addon_lastTestedNVDAVersion": "2023.1",
+	"addon_lastTestedNVDAVersion": "2024.1",
 	# Add-on update channel (default is None, denoting stable releases,
 	# and for development releases, use "dev".)
 	# Do not change unless you know what you are doing!

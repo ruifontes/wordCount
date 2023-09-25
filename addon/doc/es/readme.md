@@ -17,5 +17,4 @@ Para obtener una lista de las palabras utilizadas, simplemente presione Control+
 
 Estos comandos se pueden modificar en el cuadro de diálogo "Gestos de entrada" en la sección "Edición de texto".
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/2023.09.06/wordCount-2023.09.06.nvda-addon
-
+[1]: https://github.com/ruifontes/wordCount/releases/download/2023.09.25/wordCount-2023.09.25.nvda-addon

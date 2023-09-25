@@ -23,4 +23,4 @@ Note: In some apps, like WordPad, NotPad3 and possibly others, it is not possibl
 
 This commands can be modified in the "Input gestures" dialog in the "Text editing" section.
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/2023.09.06/wordCount-2023.09.06.nvda-addon
+[1]: https://github.com/ruifontes/wordCount/releases/download/2023.09.25/wordCount-2023.09.25.nvda-addon

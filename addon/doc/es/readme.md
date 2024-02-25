@@ -3,7 +3,7 @@
 
 ## Informaciones
 * Autores: "Rui Fontes <rui.fontes@tiflotecnia.com>, Ângelo Abrantes <ampa4374@gmail.com> and Abel Passos Jr. <abel.passos@gmail.com>
-* Actualizado en 05/09/2023
+* Actualizado en 19/01/2024
 * Descargar [versión estable][1]
 * Compatibilidad: versión de NVDA 2019.3 y superior
 
@@ -17,4 +17,4 @@ Para obtener una lista de las palabras utilizadas, simplemente presione Control+
 
 Estos comandos se pueden modificar en el cuadro de diálogo "Gestos de entrada" en la sección "Edición de texto".
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/2023.09.25/wordCount-2023.09.25.nvda-addon
+[1]: https://github.com/ruifontes/wordCount/releases/download/2024.02.25/wordCount-2024.02.25.nvda-addon

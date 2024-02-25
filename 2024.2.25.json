@@ -3,12 +3,12 @@
 	"displayName": "Count elements of the selected text",
 	"URL": "",
 	"description": "announces the number of words, characters and paragraphs of the selected text pressing Control+Shift+F12.\n\tIt also can create a list of the words used, ordered by number of occcurrences or alphabetically, display the lines containing a word and finally move to a specific line, pressing Control+Shift+F11.",
-	"sha256": "f2af5f0cfc1dd2f06fd191a47a3e5bd2317db351954753a39104708afa70805b",
+	"sha256": "9aaace09be55dd8064f1cc839e1c90769a9ebd8e604b00942495f794b858f282",
 	"homepage": "https://github.com/ruifontes/wordcount",
-	"addonVersionName": "2023.09.25",
+	"addonVersionName": "2024.02.25",
 	"addonVersionNumber": {
-		"major": 2023,
-		"minor": 9,
+		"major": 2024,
+		"minor": 2,
 		"patch": 25
 	},
 	"minNVDAVersion": {

@@ -2,7 +2,7 @@
 
 
 * Autorzy: Rui Fontes <rui.fontes@tiflotecnia.com>, Angelo Abrantes <ampa4374@gmail.com> i Abel Passos Jr. <abel.passos@gmail.com>
-* Zaktualizowano w 05/09/2023
+* Zaktualizowano w 19/01/2024
 * Pobierz [Wersja stabilna][1]
 * Kompatybilność: wersja NVDA 2019.3 i nowsze
 
@@ -12,4 +12,4 @@ W dowolnym edytorze tekstu lub w dokumencie wirtualnym, na przykład w przegląd
 Aby uzyskać listę użytych słów, wystarczy nacisnąć Control+Shift+f11.
 Polecenia te można modyfikować w oknie dialogowym \"Gesty wprowadzania\" w sekcji \"Edycja tekstu\".
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/2023.09.25/wordCount-2023.09.25.nvda-addon
+[1]: https://github.com/ruifontes/wordCount/releases/download/2024.02.25/wordCount-2024.02.25.nvda-addon

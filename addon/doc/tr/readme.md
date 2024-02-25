@@ -3,7 +3,7 @@
 ## bilgiler:
 * Yazarlar: Rui Fontes <rui.fontes@tiflotecnia.com> ve  
 Angelo Abrantes <ampa4374@gmail.com>
-* 05/09/2023'de güncellendi
+* 19/01/2024'de güncellendi
 * [Kararlı sürümü indirin][1]
 * Uyumluluk: NVDA sürüm 2019.3 ve sonrası
 
@@ -15,4 +15,4 @@ Kullanılan kelimelerin listesini almak için Control+Shift+f11 tuşlarına basm
 Bu pencerede listelenen içerik, alfabetik sıraya ve oluşturulma sırasına göre sıralanabilir.  
 Bu komutlar, "Girdi hareketleri" iletişim kutusunda "Metin düzenleme" dalı altından değiştirilebilir.  
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/2023.09.25/wordCount-2023.09.25.nvda-addon
+[1]: https://github.com/ruifontes/wordCount/releases/download/2024.02.25/wordCount-2024.02.25.nvda-addon

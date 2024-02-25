@@ -1,0 +1,8 @@
+Alterações desde 2022.03 até 2024.01.18:
+- Divisão do __init__.py em vários arquivos .py para ser mais fácil de manter;
+- Reescrita das caixas de diálogo;
+- Adicionada a opção de ir para a linha de texto correspondente à linha selecionada;
+- Introduzida a filtragem da lista de palavras;
+- Limpeza de código e correção de pequenos erros de código e de ortografia;
+- Traduções atualizadas;
+- Compatibilidade com NVDA expandida para 2024.1.

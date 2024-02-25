@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: wordCount 1.4\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2023-09-06 01:04+0100\n"
-"PO-Revision-Date: 2023-09-06 01:38+0100\n"
+"PO-Revision-Date: 2023-10-04 22:02+0300\n"
 "Last-Translator: Volodymyr Pyrih <vp88.mobile@gmail.com>\n"
 "Language-Team: Ukrainian NVDA Community\n"
 "Language: uk\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.4\n"
 "X-Poedit-Basepath: C:/Users/admin\n"
 "X-Poedit-SearchPath-0: AppData/Roaming/nvda/addons/wordCount/globalPlugins/"
 "word-count.py\n"
@@ -66,7 +66,7 @@ msgstr "За кількістю випадків"
 #. Translators: Title of the wordCount settings dialog in the NVDA settings.
 #: addon\globalPlugins\wordCount\configPanel.py:33
 msgid "Wordcount"
-msgstr ""
+msgstr "Підрахунок елементів у виділеному тексті"
 
 #. Translators: Label of a  combobox used to choose the sort order
 #: addon\globalPlugins\wordCount\configPanel.py:39
@@ -91,7 +91,7 @@ msgstr "&Пересортувати"
 #. Translators: Static text to filter the results
 #: addon\globalPlugins\wordCount\dialogs.py:42
 msgid "Filter:"
-msgstr ""
+msgstr "Фільтр:"
 
 #. Translators: Name of button to show the list of lines containing the selected word
 #: addon\globalPlugins\wordCount\dialogs.py:61
@@ -100,16 +100,16 @@ msgstr "&Показати випадки"
 
 #: addon\globalPlugins\wordCount\dialogs.py:93
 msgid "No results"
-msgstr ""
+msgstr "Немає результатів"
 
 #: addon\globalPlugins\wordCount\dialogs.py:96
 msgid "1 result"
-msgstr ""
+msgstr "1 результат"
 
 #: addon\globalPlugins\wordCount\dialogs.py:99
 #, python-format
 msgid "%d results"
-msgstr ""
+msgstr "%d результатів"
 
 #. Translators: Name of dialog showing the list of lines containing the selected word
 #: addon\globalPlugins\wordCount\dialogs.py:136

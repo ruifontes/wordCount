@@ -3,7 +3,7 @@
 
 ## Information
 * Authors: Rui Fontes <rui.fontes@tiflotecnia.com>, Angelo Abrantes <ampa4374@gmail.com> and Abel Passos Jr. <abel.passos@gmail.com>"
-* Updated in 05/09/2023
+* Updated in 19/01/2024
 * Download [stable version][1]
 * Compatibility: NVDA version 2019.3 and beyond
 
@@ -21,6 +21,6 @@ You also can select a word to get a list of the lines where our word appear.
 Selecting one of the lines, you can press Enter to be placed in that line of the text.
 Note: In some apps, like WordPad, NotPad3 and possibly others, it is not possible to place the cursor exactly on the line or it is not totally possible...
 
-This commands can be modified in the "Input gestures" dialog in the "Text editing" section.
+The commands can be modified in the "Input gestures" dialog in the "Text editing" section.
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/2023.09.25/wordCount-2023.09.25.nvda-addon
+[1]: https://github.com/ruifontes/wordCount/releases/download/2024.02.25/wordCount-2024.02.25.nvda-addon

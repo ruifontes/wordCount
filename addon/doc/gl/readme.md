@@ -1,7 +1,7 @@
 # Complemento para contar elementos do texto seleccionado #
 
 * Autores: Rui Fontes <rui.fontes@tiflotecnia.com>, Ângelo Abrantes <ampa4374@gmail.com> e Abel Passos Jr. <abel.passos@gmail.com>
-* Actualizado o 05/09/2023
+* Actualizado o 19/01/2024
 * Descargar [versión estable][1]
 * Compatibilidade : NVDA versión 2019.3 en diante
 
@@ -12,4 +12,4 @@ En calquera editor de texto, ou nun documento virtual, por exemplo nun navegador
 Para obter unha lista de palabras utilizadas, simplemente preme Control+Shift+f11.
 Estas ordes pódense modificar no diálogo \"Xestos de entrada\" na sección \"Revisión de texto\".
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/2023.09.25/wordCount-2023.09.25.nvda-addon
+[1]: https://github.com/ruifontes/wordCount/releases/download/2024.02.25/wordCount-2024.02.25.nvda-addon

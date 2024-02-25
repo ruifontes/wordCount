@@ -1,7 +1,7 @@
 # Erweiterung zum Zählen von Elementen des ausgewählten Textes #
 
 * Autoren: Rui Fontes <rui.fontes@tiflotecnia.com>, Ângelo Abrantes <ampa4374@gmail.com> und Abel Passos Jr. <abel.passos@gmail.com>
-* Aktaulisiert am 05.09.2023
+* Aktaulisiert am 19.01.2024
 * [stabile version herunterladen][1]
 * Kompatibilität: NVDA 2019.3 und neuer
 
@@ -11,4 +11,4 @@ Markieren Sie in einem beliebigen Texteditor oder in einem virtuellen Dokument, 
 Um eine Liste der verwendeten Wörter zu erhalten, drücken Sie einfach Strg+Umschalt+F11.
 Diese Befehle können im Dialogfeld für die Tastenbefehle im Abschnitt \"Textbearbeitung\" geändert werden.
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/2023.09.25/wordCount-2023.09.25.nvda-addon
+[1]: https://github.com/ruifontes/wordCount/releases/download/2024.02.25/wordCount-2024.02.25.nvda-addon

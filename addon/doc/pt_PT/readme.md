@@ -3,7 +3,7 @@
 
 ## Informações
 * Autores: Rui Fontes <rui.fontes@tiflotecnia.com>, Ângelo Abrantes <ampa4374@gmail.com> e Abel Passos Jr. <abel.passos@gmail.com>
-* Atualizado em 05/09/2023
+* Atualizado em 19/01/2024
 * Descarregue a [versão estável][1]
 * Compatibilidade: NVDA 2019.3 e seguintes
 
@@ -21,4 +21,4 @@ Nota: Em algumas aplicações, como o WordPad, NotPad3 e possivelmente outras, n
 
 Estes comandos podem ser modificados no diálogo "Definir comandos" na categoria "Edição de texto".
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/2023.09.25/wordCount-2023.09.25.nvda-addon
+[1]: https://github.com/ruifontes/wordCount/releases/download/2024.02.25/wordCount-2024.02.25.nvda-addon

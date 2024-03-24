@@ -19,4 +19,4 @@
 
 Цю команду можна змінити в діалозі «Жести вводу» в розділі «Редагування тексту».
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/2024.02.25/wordCount-2024.02.25.nvda-addon
+[1]: https://github.com/ruifontes/wordCount/releases/download/2024.03.24/wordCount-2024.03.24.nvda-addon

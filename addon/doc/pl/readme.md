@@ -12,4 +12,4 @@ W dowolnym edytorze tekstu lub w dokumencie wirtualnym, na przykład w przegląd
 Aby uzyskać listę użytych słów, wystarczy nacisnąć Control+Shift+f11.
 Polecenia te można modyfikować w oknie dialogowym \"Gesty wprowadzania\" w sekcji \"Edycja tekstu\".
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/2024.02.25/wordCount-2024.02.25.nvda-addon
+[1]: https://github.com/ruifontes/wordCount/releases/download/2024.03.24/wordCount-2024.03.24.nvda-addon

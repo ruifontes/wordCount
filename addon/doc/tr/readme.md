@@ -15,4 +15,4 @@ Kullanılan kelimelerin listesini almak için Control+Shift+f11 tuşlarına basm
 Bu pencerede listelenen içerik, alfabetik sıraya ve oluşturulma sırasına göre sıralanabilir.  
 Bu komutlar, "Girdi hareketleri" iletişim kutusunda "Metin düzenleme" dalı altından değiştirilebilir.  
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/2024.02.25/wordCount-2024.02.25.nvda-addon
+[1]: https://github.com/ruifontes/wordCount/releases/download/2024.03.24/wordCount-2024.03.24.nvda-addon

@@ -11,4 +11,4 @@ Valitse haluttu teksti missä tahansa tekstieditorissa tai virtuaaliasiakirjassa
 Saat luettelon käytetyistä sanoista painamalla Ctrl+Vaihto+F11.
 Tätä komentoa on mahdollista muuttaa \"Syöttökomennot\"-valintaikkunan \"Tekstin muokkaus\"-kategoriassa.
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/2024.02.25/wordCount-2024.02.25.nvda-addon
+[1]: https://github.com/ruifontes/wordCount/releases/download/2024.03.24/wordCount-2024.03.24.nvda-addon

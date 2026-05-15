@@ -1,16 +1,15 @@
 ﻿# Addon to count elements of selected text
 
-
 ## Information
 * Authors: Rui Fontes <rui.fontes@tiflotecnia.com>, Angelo Abrantes <ampa4374@gmail.com> and Abel Passos Jr. <abel.passos@gmail.com>"
-* Download [stable version][1]
 * Compatibility: NVDA version 2019.3 and beyond
 
+## Presentation
+This addon announces the number of words, characters, with or without spaces, and paragraphs of the selected text by pressing Control+Shift+F12.
 
-## Use
-This addon announces the number of words, characters and paragraphs of the selected text by pressing Control+Shift+F12.
 It also create a ordered list of the words used and allow to display the lines containing a specific word.
 
+## Commands
 In any text editor, or in a virtual document, for example in a web browser, PDF, email body, etc., select the desired text using the usual text selection commands and press Control+Shift+f12.
 
 To get a list of words used, just press Control+Shift+f11.
@@ -21,5 +20,3 @@ Selecting one of the lines, you can press Enter to be placed in that line of the
 Note: In some apps, like WordPad, NotPad3 and possibly others, it is not possible to place the cursor exactly on the line or it is not totally possible...
 
 The commands can be modified in the "Input gestures" dialog in the "Text editing" section.
-
-[1]: https://github.com/ruifontes/wordCount/releases/download/2024.03.24/wordCount-2024.03.24.nvda-addon

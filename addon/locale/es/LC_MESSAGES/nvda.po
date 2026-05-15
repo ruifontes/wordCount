@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wordCount 1.4\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2023-09-06 01:04+0100\n"
-"PO-Revision-Date: 2023-09-06 01:29+0100\n"
+"POT-Creation-Date: 2026-05-15 02:17+0100\n"
+"PO-Revision-Date: 2026-05-15 14:49+0100\n"
 "Last-Translator: José Manuel Delicado <jmdaweb@hotmail.com>\n"
 "Language-Team: Sergio Gómez\n"
 "Language: es\n"
@@ -16,57 +16,34 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.3.2\n"
-
-#. Translators: Message to be announced during Keyboard Help
-#: addon\globalPlugins\wordCount\__init__.py:35
-msgid "Announces the number of elements in the selected text."
-msgstr "Anuncia el número de elementos en el texto seleccionado."
-
-#. Translators: Name of the section in "Input gestures" dialog.
-#: addon\globalPlugins\wordCount\__init__.py:37
-#: addon\globalPlugins\wordCount\__init__.py:60
-msgid "Text editing"
-msgstr "Edición de texto"
-
-#. Translators: Message to announce the number of words and characters
-#: addon\globalPlugins\wordCount\__init__.py:50
-#, python-brace-format
-msgid "{words} words and {characters} characters in {paragraphs} paragraphs"
-msgstr "{words} palabras y {characters} caracteres en {paragraphs} párrafos"
-
-#. Translators: Message to be announced during Keyboard Help
-#: addon\globalPlugins\wordCount\__init__.py:58
-msgid "Opens a dialog with the list of words found in the document."
-msgstr "Abre un diálogo con la lista de palabras encontradas en el documento."
-
-#. Translators: Message to announce it is working...
-#: addon\globalPlugins\wordCount\__init__.py:64
-msgid "Wait please..."
-msgstr "Espera por favor..."
+"X-Generator: Poedit 3.8\n"
 
 #. Constants:
-#: addon\globalPlugins\wordCount\configPanel.py:28
+#: addon\globalPlugins\wordCount\configPanel.py:29
 #: addon\globalPlugins\wordCount\dialogs.py:32
 #: addon\globalPlugins\wordCount\vars.py:22
 msgid "Alphabetically"
 msgstr "Alfabéticamente"
 
-#: addon\globalPlugins\wordCount\configPanel.py:28
+#: addon\globalPlugins\wordCount\configPanel.py:29
 #: addon\globalPlugins\wordCount\dialogs.py:32
 #: addon\globalPlugins\wordCount\vars.py:22
 msgid "By number of occurences"
 msgstr "Por número de ocurrencias"
 
 #. Translators: Title of the wordCount settings dialog in the NVDA settings.
-#: addon\globalPlugins\wordCount\configPanel.py:33
+#: addon\globalPlugins\wordCount\configPanel.py:34
 msgid "Wordcount"
 msgstr "Wordcount"
 
 #. Translators: Label of a  combobox used to choose the sort order
-#: addon\globalPlugins\wordCount\configPanel.py:39
+#: addon\globalPlugins\wordCount\configPanel.py:40
 msgid "&Order by:"
 msgstr "&Ordenar por:"
+
+#: addon\globalPlugins\wordCount\configPanel.py:49
+msgid "Include \"without spaces\" in count characters"
+msgstr ""
 
 #. Translators: Title of the dialog showing the list of words
 #: addon\globalPlugins\wordCount\dialogs.py:24
@@ -121,21 +98,57 @@ msgstr "&Ir a la línea"
 msgid "select some text first."
 msgstr "selecciona algo de texto primero."
 
+#: addon\globalPlugins\wordCount\vars.py:85
 #: addon\globalPlugins\wordCount\vars.py:86
-#: addon\globalPlugins\wordCount\vars.py:87
 msgid "There are no words"
 msgstr "No hay palabras"
 
-#. Add-on summary, usually the user visible name of the addon.
-#. Translators: Summary for this add-on
-#. to be shown on installation and add-on information found in Add-ons Manager.
-#: buildVars.py:23
+#. Translators: Message to be announced during Keyboard Help
+#: addon\globalPlugins\wordCount\__init__.py:36
+msgid "Announces the number of elements in the selected text."
+msgstr "Anuncia el número de elementos en el texto seleccionado."
+
+#. Translators: Name of the section in "Input gestures" dialog.
+#: addon\globalPlugins\wordCount\__init__.py:38
+#: addon\globalPlugins\wordCount\__init__.py:71
+msgid "Text editing"
+msgstr "Edición de texto"
+
+#. Translators: Message to announce the number of words and characters
+#: addon\globalPlugins\wordCount\__init__.py:53
+msgid ""
+"{words} words, {characters} characters with spaces, {withoutSpace} "
+"characters without spaces in {paragraphs} paragraphs"
+msgstr ""
+
+#. Translators: Message to announce the number of words and characters
+#: addon\globalPlugins\wordCount\__init__.py:61
+#, fuzzy
+#| msgid "{words} words and {characters} characters in {paragraphs} paragraphs"
+msgid ""
+"{words} words, {characters} characters with spaces in {paragraphs} paragraphs"
+msgstr "{words} palabras y {characters} caracteres en {paragraphs} párrafos"
+
+#. Translators: Message to be announced during Keyboard Help
+#: addon\globalPlugins\wordCount\__init__.py:69
+msgid "Opens a dialog with the list of words found in the document."
+msgstr "Abre un diálogo con la lista de palabras encontradas en el documento."
+
+#. Translators: Message to announce it is working...
+#: addon\globalPlugins\wordCount\__init__.py:75
+msgid "Wait please..."
+msgstr "Espera por favor..."
+
+#. Add-on summary/title, usually the user visible name of the add-on
+#. Translators: Summary/title for this add-on
+#. to be shown on installation and add-on information found in add-on store
+#: buildVars.py:21
 msgid "Count elements of the selected text"
 msgstr "Contar elementos del texto seleccionado"
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-#: buildVars.py:26
+#. Translators: Long description to be shown for this add-on on add-on information from add-on store
+#: buildVars.py:24
 msgid ""
 "announces the number of words, characters and paragraphs of the selected "
 "text pressing Control+Shift+F12.\n"
@@ -149,6 +162,14 @@ msgstr ""
 "número de ocurrencias o alfabéticamente, mostrar las líneas que contienen "
 "una palabra y, por último, desplazarse a una línea concreta, pulsando "
 "Control+Mayúsculas+F11."
+
+#. Brief changelog for this version
+#. Translators: what's new content for the add-on version to be shown in the add-on store
+#: buildVars.py:30
+msgid ""
+"Set compatibility with NVDA 2026.1;\n"
+"Created option to include spaces in the count of characters."
+msgstr ""
 
 #, python-brace-format
 #~ msgid ""

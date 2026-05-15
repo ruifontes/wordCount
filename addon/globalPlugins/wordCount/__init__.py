@@ -7,6 +7,7 @@
 # See the file COPYING for more details.
 
 # Import the necessary modules
+import re
 import globalPluginHandler
 import globalVars
 from .dialogs import *
@@ -46,12 +47,22 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			end_of_paragraph = "\r" if api.getFocusObject().appModule.appName in apps else "\n"
 			# Counting paragraphs.
 			paragraphcount = info.text.count(end_of_paragraph)
-			# Translators: Message to announce the number of words and characters
-			ui.message(_("{words} words and {characters} characters in {paragraphs} paragraphs").format(
-				words = len(text2.split()),
-				characters = len(info.text),
-				paragraphs = paragraphcount)
-			)
+			textWithoutControls = re.sub(r"[\n\r\t]", "", info.text)
+			if config.conf["wordCount"]["include"] == True:
+				# Translators: Message to announce the number of words and characters
+				ui.message(_("{words} words, {characters} characters with spaces, {withoutSpace} characters without spaces in {paragraphs} paragraphs").format(
+					words = len(text2.split()),
+					characters = len(textWithoutControls),
+					withoutSpace = len(textWithoutControls.replace(" ", "")),
+					paragraphs = paragraphcount)
+				)
+			else:
+				# Translators: Message to announce the number of words and characters
+				ui.message(_("{words} words, {characters} characters with spaces in {paragraphs} paragraphs").format(
+					words = len(text2.split()),
+					characters = len(textWithoutControls),
+					paragraphs = paragraphcount)
+				)
 
 	@script( 
 		# Translators: Message to be announced during Keyboard Help 

@@ -19,6 +19,7 @@ addonHandler.initTranslation()
 def initConfiguration():
 	confspec = {
 		"order": "boolean(default=False)",
+		"include": "boolean(default=False)",
 	}
 	config.conf.spec["wordCount"] = confspec
 
@@ -45,8 +46,12 @@ class wordCountSettingsPanel(gui.settingsDialogs.SettingsPanel):
 		)
 		self.orderCB.SetSelection(config.conf["wordCount"]["order"])
 
+		self.includeSpaces = sHelper.addItem(wx.CheckBox(self, label = _('Include "without spaces" in count characters')))
+		self.includeSpaces.SetValue(bool(config.conf["wordCount"]["include"]))
+
 	def onSave (self):
 		config.conf["wordCount"]["order"] = optionsList.index(self.orderCB.GetStringSelection())
+		config.conf["wordCount"]["include"] = self.includeSpaces.GetValue()
 		# Reactivate profiles triggers
 		config.conf.enableProfileTriggers()
 		self.Hide()

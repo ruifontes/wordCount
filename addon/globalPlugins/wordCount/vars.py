@@ -58,7 +58,6 @@ def countWords():
 	text1 = info.text
 	text2 = str(text1).lower()
 	text2 = cleanPunctuation(text2)
-	print(text2)
 	return info, text2
 
 def ListOfWords():

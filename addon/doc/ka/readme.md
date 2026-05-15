@@ -1,10 +1,7 @@
 # დამატება მონიშნული ტექსტის ელემენტების გამოსათვლელად
 
-
 ## ინფორმაცია
 * ავტორები: Rui Fontes <rui.fontes@tiflotecnia.com>, Angelo Abrantes <ampa4374@gmail.com> და Abel Passos Jr. <abel.passos@gmail.com>
-* განახლდა 19/01/2024
-* [სტაბილური ვერსიის][1] ჩამოტვირთვა
 * თავსებადობა: NVDA ვერსია 2019.3 და უფრო ახალი
 
 ## გამოყენება
@@ -24,5 +21,3 @@ PDF დოკუმენტში, ელფოსტის ტექსტშ�
 
 ამ ბრძანებების შეცვლა შეგიძლიათ შეყვანის ჟესტების დიალოგიდან, ტექსტის
 რედაქტირების კატეგორიაში.
-
-[1]: https://github.com/ruifontes/wordCount/releases/download/2024.03.24/wordCount-2024.03.24.nvda-addon
